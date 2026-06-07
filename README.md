@@ -46,8 +46,6 @@ It ships as an interactive Flask dashboard with:
 | Exercise        | Ordinal     | Days/week — mapped to numeric midpoints     |
 | Societies       | Numeric     | Count of clubs/societies joined             |
 
-> **Note:** The data was collected via a self-reported survey. Attendance and CGPA figures are student-reported and not verified against official records.
-
 ---
 
 ## Models
