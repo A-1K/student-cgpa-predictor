@@ -1,0 +1,201 @@
+{% extends "base.html" %}
+{% block title %}Dashboard — HabitML{% endblock %}
+
+{% block content %}
+<div class="container">
+
+  <div class="page-header">
+    <div class="eyebrow">DS-211 · GIKI Student Survey · {{ n_responses }} Responses</div>
+    <h1>Model Results <span>Dashboard</span><span class="cursor"></span></h1>
+    <p>Linear Regression · Random Forest · Gradient Boosting · Extra Trees · SVR - trained and benchmarked.</p>
+  </div>
+
+  <!-- ── STAT ROW -->
+  <div class="stat-row">
+    <div class="stat-chip">
+      <div class="stat-val">{{ n_responses }}</div>
+      <div class="stat-lbl">Total Responses</div>
+    </div>
+    <div class="stat-chip">
+      <div class="stat-val">5</div>
+      <div class="stat-lbl">Models Trained</div>
+    </div>
+    <div class="stat-chip">
+      <div class="stat-val">9</div>
+      <div class="stat-lbl">Input Features</div>
+    </div>
+    <div class="stat-chip cyan">
+      <div class="stat-val">{{ results.keys()|list|length }}</div>
+      <div class="stat-lbl">Algorithms</div>
+    </div>
+  </div>
+
+  <!-- ── MODEL TABLE -->
+  <div class="card">
+    <div class="card-title"><span class="dot"></span> Model Comparison</div>
+    <table>
+      <thead>
+        <tr>
+          <th>Model</th>
+          <th>MAE ↓</th>
+          <th>RMSE ↓</th>
+          <th>Test R²</th>
+          <th>CV R² (5-fold) ↑</th>
+          <th>CV Std</th>
+          <th>Notes</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for mname, mdata in results.items() %}
+        <tr class="{{ 'best-row' if mdata.is_best else '' }}">
+          <td>
+            <span class="model-name">{{ mname }}</span>
+            {% if mdata.is_best %}<span class="badge">★ Best</span>{% endif %}
+          </td>
+          <td><span class="mono">{{ mdata.mae }}</span></td>
+          <td><span class="mono">{{ mdata.rmse }}</span></td>
+          <td><span class="mono {{ 'pos' if mdata.r2 > 0 else 'neg' }}">{{ mdata.r2 }}</span></td>
+          <td><strong class="mono {{ 'pos' if mdata.cv_r2 > 0 else 'neg' }}">{{ mdata.cv_r2 }}</strong></td>
+          <td><span class="mono muted">± {{ mdata.cv_std }}</span></td>
+          <td class="notes-cell">
+            {% if 'alpha' in mdata %}α = {{ mdata.alpha }}{% endif %}
+            {% if 'best_depth' in mdata %}depth = {{ mdata.best_depth }}{% endif %}
+            {% if 'best_k' in mdata %}K = {{ mdata.best_k }}{% endif %}
+            {% if 'eliminated' in mdata and mdata.eliminated %}
+              Dropped: {{ mdata.eliminated | join(', ') }}
+            {% endif %}
+          </td>
+        </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+    <p class="table-note">
+      ↓ = lower is better &nbsp;·&nbsp; ↑ = higher is better &nbsp;·&nbsp;
+      CV R² is the most reliable metric for small datasets (5-fold cross-validation).
+    </p>
+  </div>
+
+  <!-- ── CHARTS -->
+  <div class="card">
+    <div class="card-title"><span class="dot"></span> Performance Metrics — All Models</div>
+    <img src="/static/plots/metrics.png?t={{ range(99999) | random }}" class="plot-img" alt="Model Metrics"/>
+  </div>
+
+  <div class="card">
+    <div class="card-title"><span class="dot"></span> Cross-Validation R² — Stability Check</div>
+    <img src="/static/plots/cv_bars.png?t={{ range(99999) | random }}" class="plot-img" alt="CV R2 Bars"/>
+    <p class="table-note" style="margin-top:10px;">
+      Error bars show standard deviation across 5 folds. Smaller error bars = more stable model.
+    </p>
+  </div>
+
+  <div class="grid-2">
+    <div class="card">
+      <div class="card-title"><span class="dot"></span> Feature Coefficients — Regression</div>
+      <img src="/static/plots/coefficients.png?t={{ range(99999) | random }}" class="plot-img" alt="Coefficients"/>
+      <p class="table-note" style="margin-top:10px;">Blue = boosts CGPA &nbsp;·&nbsp; Red = lowers CGPA</p>
+    </div>
+    <div class="card">
+      <div class="card-title"><span class="dot"></span> Feature Importance — Decision Tree</div>
+      <img src="/static/plots/importance.png?t={{ range(99999) | random }}" class="plot-img" alt="Feature Importance"/>
+      <p class="table-note" style="margin-top:10px;">Higher = used more by tree to split decisions.</p>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-title"><span class="dot"></span> Correlation Heatmap</div>
+    <img src="/static/plots/heatmap.png?t={{ range(99999) | random }}" class="plot-img" alt="Heatmap"/>
+    <p class="table-note" style="margin-top:10px;">
+      CGPA column — darker = stronger relationship with CGPA.
+    </p>
+  </div>
+
+  {% if results['Lasso Regression'] and results['Lasso Regression'].eliminated %}
+  <div class="card">
+    <div class="card-title"><span class="dot"></span> Lasso Feature Selection</div>
+    <p style="font-size:13px;color:var(--muted);margin-bottom:14px;">
+      Lasso eliminated <strong style="color:var(--text)">{{ results['Lasso Regression'].eliminated | length }}</strong>
+      feature(s) — these had zero predictive power on this dataset:
+    </p>
+    <div class="tag-list">
+      {% for feat in results['Lasso Regression'].eliminated %}
+        <span class="tag zero">{{ feat }}</span>
+      {% endfor %}
+    </div>
+  </div>
+  {% endif %}
+
+  <div class="card">
+    <div class="card-title"><span class="dot"></span> Limitations & Notes</div>
+    <ul class="notes-list">
+      <li>Dataset includes synthetic augmentation to reach n={{ n_responses }} from 53 original survey responses.</li>
+      <li>CGPA range in responses is narrow (2.0–4.0), which limits model variance explained.</li>
+      <li>All original data is self-reported and may contain response bias.</li>
+      <li>Findings reflect GIKI campus conditions and may not generalize elsewhere.</li>
+      <li>Negative or near-zero R² indicates habits alone may not fully explain CGPA differences.</li>
+    </ul>
+  </div>
+
+</div>
+
+<style>
+  .stat-row {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 16px;
+    margin-bottom: 24px;
+  }
+  .stat-chip {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 20px;
+    position: relative;
+    overflow: hidden;
+  }
+  .stat-chip::after {
+    content: '';
+    position: absolute;
+    bottom: 0; left: 0; right: 0;
+    height: 2px;
+    background: var(--border2);
+  }
+  .stat-chip.cyan::after { background: var(--cyan); box-shadow: 0 0 8px var(--cyan); }
+  .stat-val {
+    font-family: 'Space Mono', monospace;
+    font-size: 36px;
+    font-weight: 700;
+    color: var(--text);
+    line-height: 1;
+    margin-bottom: 6px;
+  }
+  .stat-chip.cyan .stat-val { color: var(--cyan); }
+  .stat-lbl {
+    font-size: 11px;
+    color: var(--muted);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 500;
+  }
+  .mono { font-family: 'Space Mono', monospace; font-size: 12px; }
+  .pos { color: var(--green); }
+  .neg { color: var(--red); }
+  .muted { color: var(--muted); }
+  .notes-cell { font-size: 11px; color: var(--muted); max-width: 260px; }
+  .model-name { font-weight: 500; }
+  .table-note { font-size: 11px; color: var(--muted2); margin-top: 12px; font-family: 'Space Mono', monospace; }
+  .notes-list { list-style: none; padding: 0; }
+  .notes-list li {
+    font-size: 13px;
+    color: var(--muted);
+    padding: 8px 0;
+    border-bottom: 1px solid var(--border);
+    padding-left: 16px;
+    position: relative;
+    line-height: 1.6;
+  }
+  .notes-list li::before { content: '//'; position: absolute; left: 0; color: var(--muted2); font-family: 'Space Mono', monospace; font-size: 10px; top: 10px; }
+  .notes-list li:last-child { border-bottom: none; }
+  @media(max-width:768px){ .stat-row { grid-template-columns: repeat(2,1fr); } }
+</style>
+{% endblock %}

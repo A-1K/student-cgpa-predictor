@@ -1,0 +1,515 @@
+{% extends "base.html" %}
+{% block title %}Predictor — HabitML{% endblock %}
+
+{% block extra_head %}
+<style>
+  .predict-layout {
+    display: grid;
+    grid-template-columns: 400px 1fr;
+    gap: 24px;
+    align-items: start;
+  }
+
+  /* ── FORM */
+  .form-section-label {
+    font-family: 'Space Mono', monospace;
+    font-size: 9px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: var(--cyan);
+    margin: 20px 0 12px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  .form-section-label::after {
+    content: '';
+    flex: 1;
+    height: 1px;
+    background: var(--border);
+  }
+
+  .form-group { margin-bottom: 14px; }
+  .form-group label {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 11px;
+    font-weight: 600;
+    color: var(--muted);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 6px;
+    font-family: 'Space Mono', monospace;
+  }
+  .form-group label .val-badge {
+    background: var(--surface2);
+    border: 1px solid var(--border2);
+    color: var(--cyan);
+    padding: 1px 8px;
+    border-radius: 4px;
+    font-size: 11px;
+    font-weight: 700;
+    font-family: 'Space Mono', monospace;
+  }
+  .form-group input[type="number"],
+  .form-group select {
+    width: 100%;
+    padding: 9px 12px;
+    background: var(--surface2);
+    border: 1px solid var(--border2);
+    border-radius: 6px;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 13px;
+    color: var(--text);
+    transition: border-color 0.15s, box-shadow 0.15s;
+    -webkit-appearance: none;
+  }
+  .form-group input[type="number"]:focus,
+  .form-group select:focus {
+    outline: none;
+    border-color: var(--cyan);
+    box-shadow: 0 0 0 3px rgba(0,229,255,0.1);
+  }
+  .form-group input[type="range"] {
+    width: 100%;
+    -webkit-appearance: none;
+    height: 4px;
+    border-radius: 2px;
+    background: var(--border2);
+    outline: none;
+    cursor: pointer;
+  }
+  .form-group input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 16px; height: 16px;
+    border-radius: 50%;
+    background: var(--cyan);
+    box-shadow: 0 0 8px rgba(0,229,255,0.5);
+    cursor: pointer;
+    transition: transform 0.1s;
+  }
+  .form-group input[type="range"]::-webkit-slider-thumb:hover { transform: scale(1.2); }
+
+  .form-row-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+
+  .btn-predict {
+    width: 100%;
+    padding: 13px;
+    background: linear-gradient(135deg, var(--cyan), #0099BB);
+    color: #000;
+    border: none;
+    border-radius: 8px;
+    font-family: 'Space Mono', monospace;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all 0.2s;
+    margin-top: 20px;
+    position: relative;
+    overflow: hidden;
+  }
+  .btn-predict::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(135deg, rgba(255,255,255,0.2), transparent);
+    opacity: 0;
+    transition: opacity 0.2s;
+  }
+  .btn-predict:hover::before { opacity: 1; }
+  .btn-predict:hover { transform: translateY(-1px); box-shadow: 0 6px 20px rgba(0,229,255,0.3); }
+  .btn-predict:disabled { background: var(--surface2); color: var(--muted2); cursor: not-allowed; transform: none; box-shadow: none; }
+
+  /* ── RIGHT PANEL */
+  .results-panel {
+    position: sticky;
+    top: 76px;
+  }
+
+  .placeholder-card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 60px 32px;
+    text-align: center;
+  }
+  .placeholder-icon {
+    font-size: 48px;
+    margin-bottom: 16px;
+    opacity: 0.4;
+  }
+  .placeholder-text {
+    font-size: 13px;
+    color: var(--muted);
+    line-height: 1.7;
+    font-family: 'Space Mono', monospace;
+  }
+  .placeholder-text strong { color: var(--text); }
+
+  /* ── MODEL RESULT CARDS */
+  .models-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+    margin-bottom: 16px;
+  }
+  .model-result-card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 18px;
+    position: relative;
+    overflow: hidden;
+    transition: border-color 0.2s, transform 0.2s;
+  }
+  .model-result-card.best-card {
+    border-color: var(--cyan);
+    box-shadow: 0 0 20px rgba(0,229,255,0.1);
+  }
+  .model-result-card .model-label {
+    font-family: 'Space Mono', monospace;
+    font-size: 9px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    color: var(--muted);
+    margin-bottom: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .model-result-card .best-tag {
+    background: rgba(0,229,255,0.12);
+    color: var(--cyan);
+    font-size: 8px;
+    padding: 2px 6px;
+    border-radius: 3px;
+    border: 1px solid rgba(0,229,255,0.25);
+  }
+  .model-result-card .cgpa-val {
+    font-family: 'Space Mono', monospace;
+    font-size: 36px;
+    font-weight: 700;
+    color: var(--text);
+    line-height: 1;
+    margin-bottom: 4px;
+    transition: color 0.3s;
+  }
+  .model-result-card .cgpa-scale {
+    font-size: 11px;
+    color: var(--muted2);
+    margin-bottom: 10px;
+  }
+  .model-result-card .tier-pill {
+    display: inline-block;
+    font-size: 10px;
+    font-weight: 700;
+    font-family: 'Space Mono', monospace;
+    padding: 3px 10px;
+    border-radius: 4px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    color: #000;
+  }
+  .model-result-card .bar-fill {
+    position: absolute;
+    bottom: 0; left: 0;
+    height: 3px;
+    border-radius: 0 0 10px 10px;
+    transition: width 0.6s ease;
+    width: 0%;
+  }
+
+  /* ── CONSENSUS */
+  .consensus-card {
+    background: var(--surface2);
+    border: 1px solid var(--border2);
+    border-radius: 10px;
+    padding: 24px;
+    display: flex;
+    align-items: center;
+    gap: 24px;
+  }
+  .consensus-cgpa {
+    font-family: 'Space Mono', monospace;
+    font-size: 64px;
+    font-weight: 700;
+    color: var(--cyan);
+    line-height: 1;
+    text-shadow: 0 0 30px rgba(0,229,255,0.4);
+    flex-shrink: 0;
+    min-width: 130px;
+  }
+  .consensus-info { flex: 1; }
+  .consensus-label {
+    font-family: 'Space Mono', monospace;
+    font-size: 10px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: var(--muted);
+    margin-bottom: 6px;
+  }
+  .consensus-tier {
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--text);
+    margin-bottom: 8px;
+  }
+  .consensus-range {
+    font-family: 'Space Mono', monospace;
+    font-size: 11px;
+    color: var(--muted);
+  }
+
+  /* ── LOADING STATE */
+  @keyframes pulse { 0%,100%{opacity:1} 50%{opacity:0.4} }
+  .loading .cgpa-val { animation: pulse 0.8s ease infinite; }
+</style>
+{% endblock %}
+
+{% block content %}
+<div class="container">
+
+  <div class="page-header">
+    <div class="eyebrow">CGPA Predictor</div>
+    <h1>Habit <span>→</span> Grade Predictor<span class="cursor"></span></h1>
+    <p>Input your habits below. All 5 models will predict your CGPA simultaneously.</p>
+  </div>
+
+  <div class="predict-layout">
+
+    <!-- ── LEFT: FORM -->
+    <div>
+      <div class="card" style="margin-bottom:0;">
+
+        <div class="form-section-label">Demographics</div>
+        <div class="form-row-2">
+          <div class="form-group">
+            <label>Age <span class="val-badge" id="age-badge">20</span></label>
+            <input type="number" id="age" value="20" min="17" max="30" oninput="document.getElementById('age-badge').textContent=this.value"/>
+          </div>
+          <div class="form-group">
+            <label>Gender</label>
+            <select id="gender">
+              <option>Male</option>
+              <option>Female</option>
+              <option>Prefer not to say</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="form-section-label">Academic</div>
+        <div class="form-group">
+          <label>Study Hours / Day <span class="val-badge" id="study-badge">2.0 hrs</span></label>
+          <input type="range" id="study_hours" min="0" max="10" step="0.5" value="2"
+            oninput="document.getElementById('study-badge').textContent=parseFloat(this.value).toFixed(1)+' hrs'"/>
+        </div>
+        <div class="form-group">
+          <label>Class Attendance <span class="val-badge" id="attend-badge">75%</span></label>
+          <input type="range" id="attendance" min="0" max="100" step="5" value="75"
+            oninput="document.getElementById('attend-badge').textContent=this.value+'%'"/>
+        </div>
+
+        <div class="form-section-label">Lifestyle</div>
+        <div class="form-group">
+          <label>Social Media / Day <span class="val-badge" id="social-badge">3.0 hrs</span></label>
+          <input type="range" id="social_media" min="0" max="14" step="0.5" value="3"
+            oninput="document.getElementById('social-badge').textContent=parseFloat(this.value).toFixed(1)+' hrs'"/>
+        </div>
+        <div class="form-group">
+          <label>Sleep / Night <span class="val-badge" id="sleep-badge">7.0 hrs</span></label>
+          <input type="range" id="sleep_hours" min="2" max="12" step="0.5" value="7"
+            oninput="document.getElementById('sleep-badge').textContent=parseFloat(this.value).toFixed(1)+' hrs'"/>
+        </div>
+        <div class="form-row-2">
+          <div class="form-group">
+            <label>Diet Quality</label>
+            <select id="diet">
+              <option value="Very Poor">Very Poor</option>
+              <option value="Poor">Poor</option>
+              <option value="Average" selected>Average</option>
+              <option value="Good">Good</option>
+              <option value="Excellent">Excellent</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label>Exercise / Week</label>
+            <select id="exercise">
+              <option>0 days</option>
+              <option>1-2 days</option>
+              <option selected>3-4 days</option>
+              <option>5-6 days</option>
+              <option>7 days</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="form-section-label">Campus Life</div>
+        <div class="form-group">
+          <label>Societies / Clubs <span class="val-badge" id="soc-badge">1</span></label>
+          <input type="range" id="societies" min="0" max="8" step="1" value="1"
+            oninput="document.getElementById('soc-badge').textContent=this.value"/>
+        </div>
+
+        <button class="btn-predict" id="predict-btn" onclick="runAllModels()">
+          ▶ &nbsp; Run All 5 Models
+        </button>
+      </div>
+    </div>
+
+    <!-- ── RIGHT: RESULTS -->
+    <div class="results-panel" id="results-panel">
+      <div class="placeholder-card" id="placeholder">
+        <div class="placeholder-icon">⬡</div>
+        <div class="placeholder-text">
+          <strong>No prediction yet</strong><br/><br/>
+          Set your habits on the left<br/>
+          and run all 5 models to see<br/>
+          your predicted CGPA.
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<script>
+  const MODEL_NAMES = {{ model_names | tojson }};
+
+  const MODEL_SHORT = {
+    'Linear Regression': 'Linear',
+    'Random Forest':  'Rnd Forest',
+    'SVR':             'SVR',
+    'Extra Trees':     'Ext Trees',
+    'Gradient Boosting': 'Grad Boost'
+  };
+
+  function getTier(cgpa) {
+    if (cgpa >= 3.7) return { label: 'Outstanding',         color: '#39D353', bg: '#39D353' };
+    if (cgpa >= 3.2) return { label: 'Strong Performance',  color: '#00E5FF', bg: '#00E5FF' };
+    if (cgpa >= 2.5) return { label: 'Average Performance', color: '#F97316', bg: '#F97316' };
+    return           { label: 'Needs Improvement',          color: '#EF4444', bg: '#EF4444' };
+  }
+
+  function getPayload(modelName) {
+    return {
+      model:        modelName,
+      age:          document.getElementById('age').value,
+      gender:       document.getElementById('gender').value,
+      study_hours:  document.getElementById('study_hours').value,
+      attendance:   document.getElementById('attendance').value,
+      social_media: document.getElementById('social_media').value,
+      sleep_hours:  document.getElementById('sleep_hours').value,
+      diet:         document.getElementById('diet').value,
+      exercise:     document.getElementById('exercise').value,
+      societies:    document.getElementById('societies').value,
+    };
+  }
+
+  async function runAllModels() {
+    const btn = document.getElementById('predict-btn');
+    btn.disabled = true;
+    btn.textContent = '⏳  Running Models...';
+
+    // Build skeleton UI immediately
+    const panel = document.getElementById('results-panel');
+    panel.innerHTML = `
+      <div class="models-grid" id="models-grid">
+        ${MODEL_NAMES.map(m => `
+          <div class="model-result-card loading" id="card-${m.replace(/\s+/g,'_')}">
+            <div class="model-label">${MODEL_SHORT[m] || m}</div>
+            <div class="cgpa-val">—</div>
+            <div class="cgpa-scale">calculating...</div>
+            <div class="tier-pill" style="background:var(--border2);color:var(--muted);">...</div>
+            <div class="bar-fill" style="background:var(--border2);"></div>
+          </div>
+        `).join('')}
+      </div>
+      <div class="consensus-card" id="consensus-card" style="opacity:0.3;">
+        <div class="consensus-cgpa" id="cons-cgpa">—.—</div>
+        <div class="consensus-info">
+          <div class="consensus-label">Ensemble Average</div>
+          <div class="consensus-tier" id="cons-tier">Calculating...</div>
+          <div class="consensus-range" id="cons-range">Range: — to —</div>
+        </div>
+      </div>
+    `;
+
+    // Fire all 5 requests in parallel
+    const promises = MODEL_NAMES.map(async (modelName) => {
+      const resp = await fetch('/api/predict', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(getPayload(modelName))
+      });
+      return { modelName, data: await resp.json() };
+    });
+
+    const results = await Promise.allSettled(promises);
+    const values = [];
+
+    results.forEach(({ status, value }) => {
+      if (status !== 'fulfilled' || value.data.error) return;
+      const { modelName, data } = value;
+      values.push(data.cgpa);
+
+      const cardId = 'card-' + modelName.replace(/\s+/g,'_');
+      const card = document.getElementById(cardId);
+      if (!card) return;
+
+      const tier = getTier(data.cgpa);
+      const pct = ((data.cgpa - 2.0) / 2.0) * 100;
+      const isBest = MODEL_NAMES.indexOf(modelName) === 0; // will re-evaluate below
+
+      card.classList.remove('loading');
+      card.innerHTML = `
+        <div class="model-label">
+          ${MODEL_SHORT[modelName] || modelName}
+          <span class="best-tag" style="display:none;" id="best-${cardId}">★ best</span>
+        </div>
+        <div class="cgpa-val" style="color:${tier.color};">${data.cgpa.toFixed(2)}</div>
+        <div class="cgpa-scale">out of 4.00</div>
+        <div class="tier-pill" style="background:${tier.bg};">${tier.label}</div>
+        <div class="bar-fill" style="background:${tier.color}; width:${pct}%;"></div>
+      `;
+    });
+
+    // Consensus
+    if (values.length > 0) {
+      const avg = values.reduce((a,b) => a+b, 0) / values.length;
+      const min = Math.min(...values);
+      const max = Math.max(...values);
+      const avgTier = getTier(avg);
+
+      // Mark best card (closest to avg)
+      let bestModel = null, bestDiff = 999;
+      results.forEach(({ status, value }) => {
+        if (status !== 'fulfilled' || value.data.error) return;
+        const diff = Math.abs(value.data.cgpa - avg);
+        if (diff < bestDiff) { bestDiff = diff; bestModel = value.modelName; }
+      });
+      if (bestModel) {
+        const bestCard = document.getElementById('card-' + bestModel.replace(/\s+/g,'_'));
+        if (bestCard) {
+          bestCard.classList.add('best-card');
+          const tag = bestCard.querySelector('.best-tag');
+          if (tag) tag.style.display = 'inline';
+        }
+      }
+
+      document.getElementById('cons-cgpa').textContent = avg.toFixed(2);
+      document.getElementById('cons-cgpa').style.color = avgTier.color;
+      document.getElementById('cons-tier').textContent = avgTier.label;
+      document.getElementById('cons-range').textContent = `Range: ${min.toFixed(2)} – ${max.toFixed(2)}`;
+      document.getElementById('consensus-card').style.opacity = '1';
+    }
+
+    btn.disabled = false;
+    btn.innerHTML = '▶ &nbsp; Run All 5 Models';
+  }
+</script>
+{% endblock %}

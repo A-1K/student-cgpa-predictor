@@ -1,0 +1,658 @@
+Age,Gender ,"How many hours per day do you study on average?  (Include self-study, assignments, and revision. Enter a decimal if needed, e.g., 2.5)",What is your approximate class attendance percentage this semester? ,What is your CGPA? * ,What was your last semester's SGPA? (Enter your most recent semester GPA),"How many hours per day do you spend on social media? (Include Instagram, TikTok, Twitter/X, YouTube Shorts, etc.)",How many hours of sleep do you get per night on average? ,How would you describe your diet quality? ,"How many days per week do you exercise or do physical activity?  (Include gym, sports, walking, cricket, football, etc.)","Which societies or clubs are you a member of at GIKI? (Write N/A if none. Examples: GIKI ACM, IEEE, GIKI Literary Society, Sports Board, GIKI Debate Club)"
+20,Male,1.5,70,3.11,3.33,3.0,6.0,"Poor (Mostly processed foods, soft drinks, limited vegetables)",1-2 days,"
+IEEE"
+20,Male,2.0,50,3.1,3.27,11.0,7.0,Average (Mix of healthy and unhealthy),3-4 days,Science
+20,Male,1.5,60,3.02,3.03,5.0,9.0,Average (Mix of healthy and unhealthy),1-2 days,"LES, AIAA, IEEE"
+19,Male,0.67,10,3.2,3.27,12.0,3.0,Very Poor (Highly reliant on junk food and caffeine),0 days,"ACM,IEEE,TECHNO,LES"
+20,Male,3.0,50,2.45,2.3,6.0,5.0,"Good (Mostly balanced, some fast food/unhealthy snacks)",5-6 days,
+20,Male,0.5,80,3.0,3.01,8.0,7.0,"Good (Mostly balanced, some fast food/unhealthy snacks)",5-6 days,AIFS
+21,Female,2.0,70,2.53,2.6,7.0,7.0,Average (Mix of healthy and unhealthy),1-2 days,"SOPHEP,  Project Topi "
+25,Male,0.0,80,2.02,2.02,2.0,5.0,"Good (Mostly balanced, some fast food/unhealthy snacks)",7 days,"IEEE, NETRONIX, AIAA, AIESEC and NEXUS"
+21,Male,1.0,80,3.06,3.4,4.5,7.0,Average (Mix of healthy and unhealthy),3-4 days,Project Topi and UROG
+21,Male,2.0,30,2.5,2.58,4.0,6.0,Average (Mix of healthy and unhealthy),3-4 days,Naqsh
+20,Male,0.5,70,2.93,3.26,5.0,7.0,Average (Mix of healthy and unhealthy),1-2 days,
+20,Male,3.5,90,2.96,3,3.5,6.0,"Good (Mostly balanced, some fast food/unhealthy snacks)",1-2 days,"IEEE,PT,GMS"
+21,Male,0.0,70,3.0,I no remember,6.5,4.0,Very Poor (Highly reliant on junk food and caffeine),1-2 days,"AIESEC IN GIKI, GIKI SOPHEP, GIKI LES"
+22,Male,2.0,90,2.85,2.93,4.0,6.0,"Good (Mostly balanced, some fast food/unhealthy snacks)",3-4 days,SOPHEP
+21,Male,2.0,60,2.8,3.25,3.0,5.0,"Poor (Mostly processed foods, soft drinks, limited vegetables)",0 days,
+20,Female,0.0,70,3.17,3.17,5.5,5.0,"Poor (Mostly processed foods, soft drinks, limited vegetables)",1-2 days,"LDS, Sophep"
+20,Male,2.5,80,2.0,2,3.0,3.0,Very Poor (Highly reliant on junk food and caffeine),0 days,Sophep
+21,Male,0.5,80,2.83,2.8,2.0,7.0,Average (Mix of healthy and unhealthy),1-2 days,
+12,Prefer not to say,0.12,10,3.1,3.1,12.0,10.0,Average (Mix of healthy and unhealthy),3-4 days,"SOPHEP, MEDIACLUB, AEISEC"
+20,Male,1.5,80,2.8,3,4.0,5.0,Average (Mix of healthy and unhealthy),1-2 days,Sophep
+19,Male,3.0,90,3.2,3.26,2.5,6.0,"Good (Mostly balanced, some fast food/unhealthy snacks)",3-4 days,
+20,Male,1.0,100,3.4,3.5,4.0,8.0,"Good (Mostly balanced, some fast food/unhealthy snacks)",1-2 days,GIKI ACM
+20,Male,0.5,60,2.8,3.1,3.5,7.0,Average (Mix of healthy and unhealthy),1-2 days,GIKI AIAA
+20,Male,4.0,100,3.8,3.67,1.0,7.0,"Excellent (Well-balanced, fresh food)",1-2 days,Team Infinity
+22,Female,0.0,70,4.0,4,7.0,8.0,Average (Mix of healthy and unhealthy),3-4 days,sophep
+20,Male,1.0,80,3.49,3.59,5.2,9.0,"Good (Mostly balanced, some fast food/unhealthy snacks)",5-6 days,SOPHEP
+21,Male,1.0,80,2.93,3.39,2.5,7.0,"Good (Mostly balanced, some fast food/unhealthy snacks)",7 days,
+20,Male,2.5,60,3.4,3.71,3.5,8.0,"Good (Mostly balanced, some fast food/unhealthy snacks)",3-4 days,
+20,Male,2.0,80,3.18,3.2,3.0,7.0,"Good (Mostly balanced, some fast food/unhealthy snacks)",1-2 days,ACM
+20,Male,2.5,70,3.0,4,6.0,10.0,Average (Mix of healthy and unhealthy),3-4 days,
+21,Male,0.0,70,3.0,🤫,2.5,4.0,"Poor (Mostly processed foods, soft drinks, limited vegetables)",5-6 days,"IEEE
+AIAA
+TEAM HH"
+22,Male,2.0,90,3.56,3.6,5.0,3.0,"Poor (Mostly processed foods, soft drinks, limited vegetables)",1-2 days,2
+19,Female,3.0,90,3.96,3.96,3.0,8.0,"Poor (Mostly processed foods, soft drinks, limited vegetables)",1-2 days,"Aiesec, LES, gcg"
+20,Female,2.5,90,4.0,4,2.5,6.0,Average (Mix of healthy and unhealthy),7 days,"LES, GCG, AIESEC"
+19,Female,2.0,50,2.65,2.78,4.0,8.0,Average (Mix of healthy and unhealthy),1-2 days,"Sophep, IET"
+21,Female,3.5,90,3.4,3.4,2.5,6.0,"Good (Mostly balanced, some fast food/unhealthy snacks)",1-2 days,
+21,Male,1.0,90,3.1,2.9,9.0,4.0,Average (Mix of healthy and unhealthy),1-2 days,SOPHEP
+19,Male,1.5,60,2.7,2.7,8.0,7.0,Average (Mix of healthy and unhealthy),1-2 days,IEEE
+21,Female,1.0,80,3.3,3.2,4.0,6.0,Average (Mix of healthy and unhealthy),0 days,
+21,Male,1.0,80,3.3,3.1,3.5,7.0,Average (Mix of healthy and unhealthy),5-6 days,"Science
+Sophep"
+29,Male,0.0,90,2.0,3.1,2.0,5.0,"Excellent (Well-balanced, fresh food)",3-4 days,Scienxe ka naam hi nhi hai examples meh
+22,Male,0.0,100,3.4,3.56,8.0,6.0,"Excellent (Well-balanced, fresh food)",0 days,AIESEC AND LES
+20,Male,3.0,70,2.44,2.38,4.0,7.0,"Poor (Mostly processed foods, soft drinks, limited vegetables)",5-6 days,"AIESEC, SOPHEP"
+21,Male,8.5,90,3.14,2.8,8.0,5.0,Very Poor (Highly reliant on junk food and caffeine),0 days,"IEEE, LES, AIFS"
+21,Male,1.25,30,3.6,3.48,2.0,5.0,"Good (Mostly balanced, some fast food/unhealthy snacks)",3-4 days,Team SWIFT
+21,Male,2.0,70,3.1,3.23,7.0,7.0,"Good (Mostly balanced, some fast food/unhealthy snacks)",5-6 days,2
+19,Male,3.0,30,3.0,3,6.0,5.0,"Poor (Mostly processed foods, soft drinks, limited vegetables)",1-2 days,"Aiesec,sophep,media"
+23,Female,3.0,70,3.4,3.2,2.0,6.0,Average (Mix of healthy and unhealthy),1-2 days,
+21,Male,2.0,70,3.19,3.48,3.0,6.0,"Poor (Mostly processed foods, soft drinks, limited vegetables)",1-2 days,IEEE
+19,Male,1.0,60,3.73,3.73,4.0,10.0,"Good (Mostly balanced, some fast food/unhealthy snacks)",5-6 days,
+21,Male,4.0,90,3.3,3.2,3.0,7.0,Average (Mix of healthy and unhealthy),3-4 days,
+19,Male,1.0,20,3.2,3.44,4.0,6.0,Average (Mix of healthy and unhealthy),1-2 days,ACM
+19,Male,3.5,70,3.57,3.57,1.0,8.0,"Good (Mostly balanced, some fast food/unhealthy snacks)",3-4 days,"Giki Science Society, GAC, Nexus"
+21,Male,7.0,90,3.08,3.1,0.6,7.4,Average (Mix of healthy and unhealthy),1-2 days,
+20,Prefer not to say,3.6,87,2.68,2.82,13.7,6.6,"Good (Mostly balanced, some fast food/unhealthy snacks)",7 days,
+20,Male,7.1,57,2.97,2.96,10.8,5.6,"Poor (Mostly processed foods, soft drinks, limited vegetables)",3-4 days,
+20,Male,1.2,31,2.59,2.56,1.9,7.0,"Good (Mostly balanced, some fast food/unhealthy snacks)",5-6 days,
+18,Female,2.0,50,2.65,2.68,6.3,7.4,Average (Mix of healthy and unhealthy),1-2 days,IEEE
+20,Male,1.4,39,2.29,2.25,5.0,3.0,Average (Mix of healthy and unhealthy),7 days,IEEE
+20,Female,4.3,55,3.23,3.22,0.5,6.4,Average (Mix of healthy and unhealthy),1-2 days,
+23,Male,3.7,66,3.11,3.14,1.4,6.4,"Good (Mostly balanced, some fast food/unhealthy snacks)",3-4 days,
+19,Female,3.1,67,2.91,2.94,2.6,8.5,Average (Mix of healthy and unhealthy),1-2 days,LES
+19,Male,0.9,28,2.64,2.63,5.8,6.3,"Good (Mostly balanced, some fast food/unhealthy snacks)",3-4 days,
+19,Male,6.7,52,3.24,3.36,3.3,5.9,"Good (Mostly balanced, some fast food/unhealthy snacks)",7 days,
+21,Male,3.0,20,2.65,2.71,1.8,8.3,"Poor (Mostly processed foods, soft drinks, limited vegetables)",1-2 days,"IEEE, ACM"
+21,Male,0.5,77,2.34,2.31,7.3,3.5,"Good (Mostly balanced, some fast food/unhealthy snacks)",5-6 days,LES
+18,Male,1.3,22,2.95,2.91,1.6,8.4,"Excellent (Well-balanced, fresh food)",0 days,AIAA
+20,Male,4.7,100,3.1,2.88,9.5,9.0,"Good (Mostly balanced, some fast food/unhealthy snacks)",3-4 days,LES
+22,Prefer not to say,1.9,79,3.04,3.05,3.5,7.3,"Good (Mostly balanced, some fast food/unhealthy snacks)",0 days,
+20,Male,2.1,53,2.63,2.7,1.7,7.4,Average (Mix of healthy and unhealthy),3-4 days,
+19,Male,2.1,100,2.94,2.88,0.6,5.9,"Good (Mostly balanced, some fast food/unhealthy snacks)",1-2 days,LES
+22,Male,0.5,58,2.29,2.35,6.5,4.5,"Good (Mostly balanced, some fast food/unhealthy snacks)",1-2 days,
+19,Male,0.5,44,2.42,2.37,8.6,8.1,"Good (Mostly balanced, some fast food/unhealthy snacks)",1-2 days,
+20,Male,3.0,38,2.66,2.69,6.0,6.0,Very Poor (Highly reliant on junk food and caffeine),1-2 days,
+19,Female,1.0,71,2.92,2.97,2.5,4.8,"Good (Mostly balanced, some fast food/unhealthy snacks)",1-2 days,LES
+20,Female,1.2,51,2.56,2.54,1.5,5.6,"Poor (Mostly processed foods, soft drinks, limited vegetables)",1-2 days,
+19,Male,1.8,27,2.66,2.67,1.3,9.2,Average (Mix of healthy and unhealthy),1-2 days,LES
+19,Male,5.7,96,3.2,3.07,3.6,7.6,Very Poor (Highly reliant on junk food and caffeine),3-4 days,
+22,Male,6.4,66,3.32,3.35,0.7,4.1,"Poor (Mostly processed foods, soft drinks, limited vegetables)",7 days,ACM
+20,Male,0.5,73,2.83,2.84,3.1,8.6,"Poor (Mostly processed foods, soft drinks, limited vegetables)",7 days,
+19,Male,4.9,67,3.13,3.18,2.9,6.0,Average (Mix of healthy and unhealthy),5-6 days,
+22,Male,2.7,15,2.64,2.8,0.5,7.0,"Good (Mostly balanced, some fast food/unhealthy snacks)",5-6 days,AIAA
+22,Prefer not to say,0.5,43,2.49,2.46,1.5,6.7,Average (Mix of healthy and unhealthy),3-4 days,IEEE
+20,Male,0.5,48,2.81,2.89,0.5,6.1,Average (Mix of healthy and unhealthy),1-2 days,ACM
+21,Male,0.8,44,2.58,2.51,3.2,7.7,Average (Mix of healthy and unhealthy),0 days,"IEEE, ACM"
+19,Male,2.5,97,2.39,2.34,14.0,6.4,"Excellent (Well-balanced, fresh food)",3-4 days,"IEEE, ACM"
+21,Male,3.8,82,3.32,3.37,0.9,4.9,"Excellent (Well-balanced, fresh food)",3-4 days,
+19,Male,2.0,75,2.67,2.65,4.7,5.9,"Good (Mostly balanced, some fast food/unhealthy snacks)",1-2 days,ACM
+20,Prefer not to say,0.7,61,2.86,2.82,0.7,7.4,Average (Mix of healthy and unhealthy),1-2 days,IEEE
+20,Female,0.9,85,2.49,2.41,1.9,6.0,Very Poor (Highly reliant on junk food and caffeine),1-2 days,AIAA
+21,Male,1.5,71,2.73,2.8,5.2,8.3,"Good (Mostly balanced, some fast food/unhealthy snacks)",1-2 days,"IEEE, ACM"
+20,Male,0.5,35,2.19,2.19,8.9,6.4,Very Poor (Highly reliant on junk food and caffeine),1-2 days,IEEE
+21,Male,7.9,84,3.21,3.1,0.5,4.7,Average (Mix of healthy and unhealthy),3-4 days,IEEE
+20,Male,2.1,75,2.82,2.71,3.8,6.1,Average (Mix of healthy and unhealthy),1-2 days,AIAA
+19,Male,3.1,30,2.26,2.2,14.0,7.5,Average (Mix of healthy and unhealthy),1-2 days,IEEE
+19,Male,0.5,59,2.94,2.93,4.5,7.4,"Good (Mostly balanced, some fast food/unhealthy snacks)",3-4 days,
+19,Male,3.9,66,3.3,3.39,3.5,6.4,"Good (Mostly balanced, some fast food/unhealthy snacks)",5-6 days,IEEE
+20,Male,0.5,90,2.8,2.84,9.2,6.0,"Good (Mostly balanced, some fast food/unhealthy snacks)",1-2 days,LES
+18,Male,0.7,79,2.73,2.8,3.1,5.7,"Poor (Mostly processed foods, soft drinks, limited vegetables)",5-6 days,ACM
+21,Prefer not to say,0.5,74,2.84,2.78,0.5,7.4,Average (Mix of healthy and unhealthy),3-4 days,AIAA
+20,Male,3.7,37,3.03,2.97,2.0,7.1,"Good (Mostly balanced, some fast food/unhealthy snacks)",5-6 days,
+21,Male,1.7,98,2.81,2.82,3.6,6.8,"Poor (Mostly processed foods, soft drinks, limited vegetables)",1-2 days,LES
+20,Male,2.7,48,2.56,2.58,7.5,7.5,Average (Mix of healthy and unhealthy),0 days,IEEE
+20,Male,0.5,65,2.41,2.3,3.0,3.0,Average (Mix of healthy and unhealthy),3-4 days,
+19,Male,0.7,87,2.79,2.87,1.3,8.5,"Poor (Mostly processed foods, soft drinks, limited vegetables)",3-4 days,IEEE
+20,Female,2.2,100,3.41,3.38,0.5,7.0,"Poor (Mostly processed foods, soft drinks, limited vegetables)",3-4 days,IEEE
+19,Male,0.5,40,2.66,2.68,3.7,4.7,"Good (Mostly balanced, some fast food/unhealthy snacks)",3-4 days,"IEEE, ACM"
+18,Male,0.9,67,2.17,2.12,14.0,5.4,"Poor (Mostly processed foods, soft drinks, limited vegetables)",1-2 days,AIAA
+21,Male,9.7,81,3.54,3.56,6.6,5.8,Very Poor (Highly reliant on junk food and caffeine),0 days,LES
+20,Male,0.9,51,2.82,2.66,4.9,6.2,"Good (Mostly balanced, some fast food/unhealthy snacks)",5-6 days,
+18,Male,1.6,79,3.06,3.03,0.5,7.4,"Poor (Mostly processed foods, soft drinks, limited vegetables)",3-4 days,
+19,Male,8.9,74,3.21,3.21,1.9,6.7,Average (Mix of healthy and unhealthy),1-2 days,ACM
+20,Male,2.1,54,2.36,2.34,14.0,5.1,"Good (Mostly balanced, some fast food/unhealthy snacks)",3-4 days,"IEEE, ACM"
+18,Female,2.1,59,2.88,2.98,2.0,8.7,"Poor (Mostly processed foods, soft drinks, limited vegetables)",5-6 days,AIAA
+20,Male,3.2,78,3.39,3.41,0.5,7.4,Average (Mix of healthy and unhealthy),1-2 days,LES
+20,Female,2.4,35,2.74,2.78,0.5,5.6,Average (Mix of healthy and unhealthy),1-2 days,
+20,Male,4.0,47,3.01,3.02,2.5,4.8,"Good (Mostly balanced, some fast food/unhealthy snacks)",3-4 days,"IEEE, ACM"
+19,Male,5.2,51,2.9,3.05,0.5,4.8,"Poor (Mostly processed foods, soft drinks, limited vegetables)",1-2 days,
+20,Male,8.9,37,3.34,3.26,1.0,4.9,Average (Mix of healthy and unhealthy),1-2 days,"IEEE, ACM"
+19,Male,0.6,78,2.47,2.54,3.0,5.8,"Excellent (Well-balanced, fresh food)",3-4 days,"IEEE, ACM"
+19,Female,5.2,44,2.47,2.51,5.8,8.5,"Good (Mostly balanced, some fast food/unhealthy snacks)",1-2 days,
+21,Male,2.6,74,3.24,3.35,0.5,7.4,Average (Mix of healthy and unhealthy),0 days,
+21,Male,0.5,36,2.8,2.69,4.0,7.1,Average (Mix of healthy and unhealthy),5-6 days,
+19,Female,3.0,30,2.57,2.6,1.5,9.1,"Excellent (Well-balanced, fresh food)",1-2 days,"IEEE, ACM"
+21,Male,4.6,67,3.0,3,0.5,6.0,Average (Mix of healthy and unhealthy),1-2 days,AIAA
+20,Female,2.7,63,3.25,3.24,0.7,7.5,Average (Mix of healthy and unhealthy),0 days,AIAA
+18,Prefer not to say,4.6,63,2.41,2.41,14.0,5.3,Very Poor (Highly reliant on junk food and caffeine),1-2 days,IEEE
+18,Male,8.0,54,3.2,3.12,0.8,5.4,Average (Mix of healthy and unhealthy),3-4 days,
+19,Male,0.5,59,2.76,2.71,2.8,10.0,Very Poor (Highly reliant on junk food and caffeine),5-6 days,
+20,Male,3.6,50,2.44,2.44,0.8,4.1,"Good (Mostly balanced, some fast food/unhealthy snacks)",0 days,
+21,Male,4.1,15,2.42,2.39,4.5,6.0,"Poor (Mostly processed foods, soft drinks, limited vegetables)",5-6 days,LES
+22,Male,5.4,68,2.68,2.71,5.4,4.4,"Poor (Mostly processed foods, soft drinks, limited vegetables)",3-4 days,
+20,Male,1.8,98,2.78,2.79,4.7,5.1,"Good (Mostly balanced, some fast food/unhealthy snacks)",3-4 days,AIAA
+20,Male,0.6,65,2.56,2.5,3.5,7.6,Very Poor (Highly reliant on junk food and caffeine),1-2 days,LES
+22,Male,0.5,32,2.58,2.69,1.0,7.5,Average (Mix of healthy and unhealthy),1-2 days,
+19,Prefer not to say,0.9,100,2.8,2.77,4.8,6.6,Average (Mix of healthy and unhealthy),1-2 days,
+22,Male,1.1,28,2.79,2.77,0.5,7.1,"Good (Mostly balanced, some fast food/unhealthy snacks)",1-2 days,AIAA
+19,Male,1.2,43,2.68,2.64,5.4,9.2,Very Poor (Highly reliant on junk food and caffeine),0 days,LES
+19,Male,0.8,40,2.71,2.78,2.1,7.8,Average (Mix of healthy and unhealthy),1-2 days,AIAA
+19,Male,10.0,60,3.51,3.58,0.5,5.3,"Good (Mostly balanced, some fast food/unhealthy snacks)",1-2 days,
+21,Male,0.5,32,2.04,2,5.5,6.0,Average (Mix of healthy and unhealthy),3-4 days,
+19,Male,0.5,60,2.19,2.21,7.5,5.2,"Poor (Mostly processed foods, soft drinks, limited vegetables)",5-6 days,
+20,Male,3.3,50,2.42,2.35,5.0,6.1,"Good (Mostly balanced, some fast food/unhealthy snacks)",1-2 days,
+21,Male,7.5,53,3.46,3.42,1.1,6.1,Average (Mix of healthy and unhealthy),5-6 days,"IEEE, ACM"
+19,Male,5.8,52,3.19,3.16,1.3,8.1,"Good (Mostly balanced, some fast food/unhealthy snacks)",1-2 days,
+21,Male,1.0,62,2.94,2.98,4.6,8.0,"Poor (Mostly processed foods, soft drinks, limited vegetables)",5-6 days,"IEEE, ACM"
+19,Male,0.5,47,2.71,2.64,0.6,5.8,Average (Mix of healthy and unhealthy),3-4 days,
+19,Male,0.5,84,2.4,2.46,11.3,6.5,Average (Mix of healthy and unhealthy),1-2 days,
+21,Male,5.3,60,3.25,3.33,1.9,5.6,"Good (Mostly balanced, some fast food/unhealthy snacks)",3-4 days,ACM
+20,Male,3.7,82,3.31,3.35,4.9,6.9,"Excellent (Well-balanced, fresh food)",3-4 days,"IEEE, ACM"
+18,Female,3.8,91,2.78,2.79,10.3,7.2,"Good (Mostly balanced, some fast food/unhealthy snacks)",7 days,
+20,Male,0.9,73,2.63,2.68,4.6,6.9,Average (Mix of healthy and unhealthy),0 days,
+21,Male,0.7,69,2.49,2.53,0.9,3.9,"Excellent (Well-balanced, fresh food)",1-2 days,IEEE
+20,Male,9.2,100,3.27,3.33,3.6,7.0,"Poor (Mostly processed foods, soft drinks, limited vegetables)",3-4 days,
+20,Male,1.5,64,2.55,2.65,9.0,5.8,Average (Mix of healthy and unhealthy),5-6 days,
+19,Male,5.5,56,2.69,2.75,14.0,6.3,"Good (Mostly balanced, some fast food/unhealthy snacks)",7 days,IEEE
+22,Male,1.2,27,2.0,2,9.5,5.2,Average (Mix of healthy and unhealthy),1-2 days,LES
+22,Male,1.6,96,2.82,2.96,7.9,8.7,Average (Mix of healthy and unhealthy),1-2 days,
+22,Male,0.5,59,2.52,2.58,4.0,4.3,Average (Mix of healthy and unhealthy),1-2 days,AIAA
+21,Male,0.6,49,2.95,2.94,0.9,6.1,"Good (Mostly balanced, some fast food/unhealthy snacks)",5-6 days,
+21,Male,1.5,82,2.87,2.96,0.7,7.9,Average (Mix of healthy and unhealthy),1-2 days,
+19,Male,3.0,15,2.4,2.31,3.7,7.7,Very Poor (Highly reliant on junk food and caffeine),5-6 days,
+18,Male,1.0,62,2.76,2.77,0.5,4.2,"Excellent (Well-balanced, fresh food)",3-4 days,
+20,Female,5.0,72,3.09,3.19,0.5,6.1,Average (Mix of healthy and unhealthy),1-2 days,"IEEE, ACM"
+19,Female,1.4,91,2.91,2.85,3.0,5.0,Average (Mix of healthy and unhealthy),5-6 days,
+22,Male,3.0,79,2.96,2.95,0.5,5.7,"Poor (Mostly processed foods, soft drinks, limited vegetables)",0 days,
+20,Male,3.6,52,3.08,3.18,1.3,4.3,Average (Mix of healthy and unhealthy),3-4 days,
+20,Male,2.9,71,2.48,2.45,13.6,4.5,"Good (Mostly balanced, some fast food/unhealthy snacks)",3-4 days,LES
+20,Male,4.6,57,2.92,3.08,3.8,6.8,Very Poor (Highly reliant on junk food and caffeine),3-4 days,LES
+20,Male,2.9,83,2.61,2.61,0.5,4.6,Very Poor (Highly reliant on junk food and caffeine),0 days,
+20,Male,1.9,51,2.2,2.19,14.0,6.7,Average (Mix of healthy and unhealthy),5-6 days,LES
+20,Female,7.2,62,2.88,2.82,4.0,4.3,Average (Mix of healthy and unhealthy),0 days,AIAA
+19,Male,3.7,37,2.6,2.47,2.0,6.1,"Good (Mostly balanced, some fast food/unhealthy snacks)",3-4 days,
+21,Male,1.4,56,2.84,2.81,0.7,6.8,Average (Mix of healthy and unhealthy),5-6 days,
+22,Female,2.5,67,2.36,2.38,10.3,7.6,Very Poor (Highly reliant on junk food and caffeine),1-2 days,AIAA
+21,Male,4.3,58,2.6,2.57,12.2,6.3,"Good (Mostly balanced, some fast food/unhealthy snacks)",0 days,
+20,Male,6.2,74,3.08,3.12,6.4,5.2,"Poor (Mostly processed foods, soft drinks, limited vegetables)",5-6 days,
+20,Female,4.7,55,2.95,2.88,1.0,6.4,Average (Mix of healthy and unhealthy),5-6 days,"IEEE, ACM"
+20,Male,1.0,51,2.71,2.69,4.9,7.7,"Poor (Mostly processed foods, soft drinks, limited vegetables)",3-4 days,AIAA
+19,Male,0.5,51,2.81,2.76,0.5,4.8,Average (Mix of healthy and unhealthy),3-4 days,ACM
+21,Prefer not to say,0.8,87,2.56,2.61,14.0,5.6,Average (Mix of healthy and unhealthy),1-2 days,
+19,Male,0.6,73,2.73,2.76,2.3,5.8,"Good (Mostly balanced, some fast food/unhealthy snacks)",1-2 days,
+19,Male,0.5,41,2.63,2.68,0.7,4.4,Average (Mix of healthy and unhealthy),1-2 days,LES
+19,Male,10.0,70,3.14,3.09,2.2,3.8,"Good (Mostly balanced, some fast food/unhealthy snacks)",0 days,IEEE
+20,Male,10.0,62,3.74,3.63,1.5,6.6,Very Poor (Highly reliant on junk food and caffeine),5-6 days,"IEEE, ACM"
+19,Male,4.4,100,3.34,3.42,4.3,6.0,"Good (Mostly balanced, some fast food/unhealthy snacks)",5-6 days,
+19,Male,5.2,74,3.26,3.28,1.3,7.5,Average (Mix of healthy and unhealthy),1-2 days,
+22,Male,1.4,100,2.66,2.72,0.5,5.8,"Poor (Mostly processed foods, soft drinks, limited vegetables)",0 days,
+20,Male,1.5,57,2.45,2.47,3.6,5.0,"Poor (Mostly processed foods, soft drinks, limited vegetables)",0 days,ACM
+19,Male,1.4,34,2.68,2.65,0.5,7.3,Average (Mix of healthy and unhealthy),1-2 days,AIAA
+21,Female,1.2,78,2.49,2.47,11.3,5.8,"Excellent (Well-balanced, fresh food)",0 days,AIAA
+20,Male,5.3,72,3.38,3.39,1.4,7.5,"Good (Mostly balanced, some fast food/unhealthy snacks)",3-4 days,LES
+19,Male,1.8,60,2.88,2.86,0.5,6.0,"Excellent (Well-balanced, fresh food)",5-6 days,
+21,Male,1.0,84,2.55,2.71,8.0,4.4,"Poor (Mostly processed foods, soft drinks, limited vegetables)",3-4 days,
+20,Male,5.7,86,3.24,3.32,1.6,7.4,Average (Mix of healthy and unhealthy),3-4 days,
+21,Prefer not to say,1.4,32,2.83,2.89,7.1,4.6,Average (Mix of healthy and unhealthy),3-4 days,
+19,Male,3.2,100,3.18,3.19,7.0,8.7,Average (Mix of healthy and unhealthy),0 days,IEEE
+20,Female,2.6,86,2.98,3.05,5.8,7.2,Average (Mix of healthy and unhealthy),3-4 days,
+20,Male,3.9,24,2.75,2.81,1.9,6.8,"Good (Mostly balanced, some fast food/unhealthy snacks)",3-4 days,
+21,Male,0.5,68,2.82,2.86,3.4,5.4,Average (Mix of healthy and unhealthy),3-4 days,ACM
+19,Female,0.5,56,2.57,2.5,6.2,6.8,"Good (Mostly balanced, some fast food/unhealthy snacks)",1-2 days,
+19,Male,4.3,97,2.9,2.88,2.8,5.9,"Poor (Mostly processed foods, soft drinks, limited vegetables)",3-4 days,
+20,Male,5.5,87,3.22,3.25,0.5,6.6,"Poor (Mostly processed foods, soft drinks, limited vegetables)",1-2 days,"IEEE, ACM"
+20,Male,7.7,67,2.99,3.06,6.5,9.5,Very Poor (Highly reliant on junk food and caffeine),1-2 days,ACM
+21,Male,4.6,59,3.49,3.46,1.5,6.5,"Good (Mostly balanced, some fast food/unhealthy snacks)",5-6 days,
+21,Male,6.4,74,3.25,3.22,1.2,8.2,"Good (Mostly balanced, some fast food/unhealthy snacks)",1-2 days,"IEEE, ACM"
+21,Male,3.6,54,3.23,3.17,2.3,7.9,Average (Mix of healthy and unhealthy),3-4 days,"IEEE, ACM"
+20,Female,4.9,50,2.85,2.91,0.6,6.0,Average (Mix of healthy and unhealthy),3-4 days,"IEEE, ACM"
+21,Male,0.5,64,2.14,2.16,8.3,8.4,Average (Mix of healthy and unhealthy),1-2 days,ACM
+20,Male,4.1,89,3.1,3.21,3.0,7.2,"Poor (Mostly processed foods, soft drinks, limited vegetables)",1-2 days,
+18,Male,0.6,62,2.71,2.77,1.4,8.7,Average (Mix of healthy and unhealthy),0 days,
+22,Male,0.5,43,2.76,2.75,6.1,5.5,Average (Mix of healthy and unhealthy),3-4 days,
+18,Female,6.8,92,3.4,3.47,2.2,7.4,Average (Mix of healthy and unhealthy),3-4 days,ACM
+22,Prefer not to say,6.3,33,2.82,2.8,7.3,6.7,Very Poor (Highly reliant on junk food and caffeine),1-2 days,
+20,Male,0.9,50,2.99,2.98,0.6,6.6,"Good (Mostly balanced, some fast food/unhealthy snacks)",3-4 days,
+21,Male,0.5,77,2.47,2.35,4.3,4.5,Average (Mix of healthy and unhealthy),3-4 days,
+19,Prefer not to say,0.5,45,2.56,2.54,3.8,7.0,"Poor (Mostly processed foods, soft drinks, limited vegetables)",0 days,
+21,Male,10.0,77,3.78,3.71,5.7,9.7,"Good (Mostly balanced, some fast food/unhealthy snacks)",1-2 days,"IEEE, ACM"
+19,Male,0.5,71,2.63,2.57,1.9,7.7,"Poor (Mostly processed foods, soft drinks, limited vegetables)",5-6 days,"IEEE, ACM"
+20,Male,0.5,15,2.51,2.42,2.8,8.3,Average (Mix of healthy and unhealthy),1-2 days,LES
+18,Male,1.8,66,2.81,2.75,0.5,7.2,Average (Mix of healthy and unhealthy),3-4 days,
+22,Male,3.2,72,3.26,3.17,0.6,4.6,"Good (Mostly balanced, some fast food/unhealthy snacks)",1-2 days,AIAA
+20,Male,1.6,55,2.67,2.69,3.7,7.1,"Excellent (Well-balanced, fresh food)",7 days,ACM
+18,Female,3.8,66,3.32,3.3,0.7,7.8,Average (Mix of healthy and unhealthy),3-4 days,LES
+21,Male,5.3,43,2.77,2.72,0.5,4.2,"Good (Mostly balanced, some fast food/unhealthy snacks)",5-6 days,
+20,Male,7.1,69,3.17,3.22,8.1,6.4,"Good (Mostly balanced, some fast food/unhealthy snacks)",3-4 days,IEEE
+18,Male,1.8,38,2.61,2.56,2.7,5.5,Average (Mix of healthy and unhealthy),1-2 days,
+20,Male,0.9,15,2.77,2.72,2.1,6.7,Average (Mix of healthy and unhealthy),1-2 days,ACM
+20,Male,0.9,79,2.66,2.74,1.0,7.1,"Good (Mostly balanced, some fast food/unhealthy snacks)",1-2 days,"IEEE, ACM"
+21,Male,0.5,66,2.65,2.62,4.3,6.2,"Good (Mostly balanced, some fast food/unhealthy snacks)",1-2 days,
+20,Male,0.7,79,2.41,2.3,3.9,4.4,"Poor (Mostly processed foods, soft drinks, limited vegetables)",1-2 days,
+20,Male,1.9,52,3.24,3.17,0.6,4.8,"Good (Mostly balanced, some fast food/unhealthy snacks)",0 days,
+19,Male,0.5,72,3.03,3.06,0.9,7.4,Average (Mix of healthy and unhealthy),3-4 days,AIAA
+20,Male,1.2,66,2.89,3,3.1,6.3,"Good (Mostly balanced, some fast food/unhealthy snacks)",3-4 days,AIAA
+20,Male,0.6,49,2.78,2.72,2.8,7.5,"Good (Mostly balanced, some fast food/unhealthy snacks)",1-2 days,"IEEE, ACM"
+20,Male,1.9,39,2.58,2.68,0.5,5.5,"Poor (Mostly processed foods, soft drinks, limited vegetables)",5-6 days,LES
+20,Male,0.7,40,3.03,3.01,1.2,7.5,Average (Mix of healthy and unhealthy),1-2 days,IEEE
+23,Male,6.9,61,2.95,3.02,5.5,8.6,Average (Mix of healthy and unhealthy),1-2 days,LES
+20,Male,3.0,15,2.96,2.94,0.7,5.9,"Good (Mostly balanced, some fast food/unhealthy snacks)",1-2 days,
+20,Male,1.6,70,2.75,2.8,4.7,9.0,"Poor (Mostly processed foods, soft drinks, limited vegetables)",3-4 days,"IEEE, ACM"
+19,Female,2.0,69,2.96,3.01,4.7,9.0,Very Poor (Highly reliant on junk food and caffeine),5-6 days,ACM
+20,Male,7.4,41,2.92,2.92,1.4,7.1,Average (Mix of healthy and unhealthy),3-4 days,AIAA
+18,Male,2.7,37,2.39,2.44,13.7,5.6,"Poor (Mostly processed foods, soft drinks, limited vegetables)",3-4 days,"IEEE, ACM"
+22,Female,6.1,80,3.1,2.99,5.8,4.4,Average (Mix of healthy and unhealthy),3-4 days,
+19,Male,2.8,67,3.0,3.12,0.5,6.3,Average (Mix of healthy and unhealthy),1-2 days,
+22,Male,4.3,85,3.18,3.26,6.6,6.1,"Good (Mostly balanced, some fast food/unhealthy snacks)",3-4 days,
+21,Male,1.9,67,3.09,3.13,1.6,6.2,Average (Mix of healthy and unhealthy),0 days,
+19,Male,1.7,76,2.86,2.85,3.6,5.7,"Good (Mostly balanced, some fast food/unhealthy snacks)",7 days,
+21,Male,6.1,57,3.39,3.38,2.4,8.5,"Poor (Mostly processed foods, soft drinks, limited vegetables)",1-2 days,
+18,Male,1.1,81,2.69,2.76,6.9,8.7,Average (Mix of healthy and unhealthy),1-2 days,ACM
+21,Male,6.0,51,2.81,2.83,8.4,6.3,"Good (Mostly balanced, some fast food/unhealthy snacks)",1-2 days,LES
+20,Male,0.9,41,2.28,2.24,9.9,5.6,"Excellent (Well-balanced, fresh food)",1-2 days,IEEE
+21,Male,3.6,76,3.02,3.05,3.8,9.7,"Poor (Mostly processed foods, soft drinks, limited vegetables)",3-4 days,AIAA
+21,Male,2.4,100,3.13,3.09,0.5,8.3,"Excellent (Well-balanced, fresh food)",0 days,"IEEE, ACM"
+20,Prefer not to say,1.0,43,2.48,2.44,4.7,5.4,Average (Mix of healthy and unhealthy),1-2 days,LES
+20,Female,8.1,48,3.02,3.05,2.9,7.3,"Poor (Mostly processed foods, soft drinks, limited vegetables)",1-2 days,ACM
+18,Male,1.9,100,3.13,3.22,3.4,6.1,"Good (Mostly balanced, some fast food/unhealthy snacks)",5-6 days,IEEE
+19,Male,3.0,76,3.21,3.31,0.5,7.4,Average (Mix of healthy and unhealthy),1-2 days,IEEE
+19,Male,6.6,59,3.2,3.27,7.6,5.8,Average (Mix of healthy and unhealthy),3-4 days,
+21,Male,4.0,93,3.68,3.72,5.5,8.0,"Excellent (Well-balanced, fresh food)",3-4 days,LES
+22,Male,1.7,53,3.18,3.17,0.5,5.3,"Good (Mostly balanced, some fast food/unhealthy snacks)",5-6 days,LES
+18,Male,10.0,39,3.68,3.67,0.6,7.6,Average (Mix of healthy and unhealthy),1-2 days,IEEE
+21,Female,0.6,62,2.72,2.69,5.7,6.2,Average (Mix of healthy and unhealthy),3-4 days,
+19,Male,0.5,15,2.0,2,0.5,7.1,Average (Mix of healthy and unhealthy),3-4 days,
+18,Male,2.9,55,2.66,2.57,1.0,6.2,Very Poor (Highly reliant on junk food and caffeine),1-2 days,
+20,Male,1.6,52,2.54,2.49,5.2,6.0,"Good (Mostly balanced, some fast food/unhealthy snacks)",1-2 days,IEEE
+18,Male,0.5,59,2.58,2.61,2.8,5.3,"Good (Mostly balanced, some fast food/unhealthy snacks)",3-4 days,LES
+21,Male,4.0,39,2.59,2.54,7.6,4.3,Average (Mix of healthy and unhealthy),1-2 days,"IEEE, ACM"
+20,Male,0.5,40,2.17,2.18,10.0,8.4,"Good (Mostly balanced, some fast food/unhealthy snacks)",5-6 days,
+20,Male,0.5,100,3.31,3.36,2.8,5.9,"Good (Mostly balanced, some fast food/unhealthy snacks)",7 days,
+20,Male,4.6,53,2.74,2.57,6.0,6.1,"Excellent (Well-balanced, fresh food)",1-2 days,LES
+19,Male,3.3,50,2.6,2.64,8.9,5.6,Average (Mix of healthy and unhealthy),3-4 days,
+19,Male,7.8,49,3.07,3.07,3.6,5.7,"Poor (Mostly processed foods, soft drinks, limited vegetables)",7 days,IEEE
+20,Female,3.3,100,2.93,2.89,0.7,6.6,"Poor (Mostly processed foods, soft drinks, limited vegetables)",3-4 days,"IEEE, ACM"
+22,Male,0.5,67,2.55,2.48,2.5,7.2,Average (Mix of healthy and unhealthy),7 days,LES
+21,Male,0.5,69,3.19,3.18,1.5,7.6,"Good (Mostly balanced, some fast food/unhealthy snacks)",1-2 days,IEEE
+22,Female,3.0,25,2.71,2.75,1.3,5.7,Average (Mix of healthy and unhealthy),1-2 days,ACM
+20,Prefer not to say,1.3,83,2.7,2.77,5.3,5.3,Average (Mix of healthy and unhealthy),3-4 days,AIAA
+21,Male,0.5,96,2.55,2.54,9.6,5.7,Average (Mix of healthy and unhealthy),3-4 days,
+19,Female,2.1,19,2.29,2.28,8.5,9.6,"Poor (Mostly processed foods, soft drinks, limited vegetables)",5-6 days,"IEEE, ACM"
+21,Male,0.6,64,2.92,2.96,1.3,7.4,"Poor (Mostly processed foods, soft drinks, limited vegetables)",5-6 days,"IEEE, ACM"
+21,Female,1.8,42,2.74,2.79,3.5,8.3,Average (Mix of healthy and unhealthy),5-6 days,
+21,Male,1.2,58,2.55,2.63,2.4,6.1,Very Poor (Highly reliant on junk food and caffeine),1-2 days,
+20,Male,0.5,70,2.39,2.49,12.4,6.6,"Good (Mostly balanced, some fast food/unhealthy snacks)",1-2 days,
+18,Male,1.3,37,2.4,2.41,5.4,5.7,Average (Mix of healthy and unhealthy),1-2 days,
+19,Male,0.5,78,3.06,2.96,1.2,7.3,"Poor (Mostly processed foods, soft drinks, limited vegetables)",5-6 days,
+21,Male,4.7,57,2.94,2.86,0.5,9.3,"Poor (Mostly processed foods, soft drinks, limited vegetables)",1-2 days,
+19,Male,4.4,62,2.94,2.97,1.1,5.0,"Poor (Mostly processed foods, soft drinks, limited vegetables)",5-6 days,"IEEE, ACM"
+20,Female,0.6,55,2.56,2.57,1.2,4.4,Average (Mix of healthy and unhealthy),1-2 days,
+18,Male,3.7,45,2.72,2.73,5.8,6.4,Average (Mix of healthy and unhealthy),1-2 days,"IEEE, ACM"
+19,Male,0.5,64,2.69,2.68,2.2,7.1,Average (Mix of healthy and unhealthy),3-4 days,
+22,Male,1.0,97,2.95,2.98,1.6,5.4,"Good (Mostly balanced, some fast food/unhealthy snacks)",1-2 days,"IEEE, ACM"
+18,Male,4.4,36,3.08,3.06,5.5,8.4,Average (Mix of healthy and unhealthy),1-2 days,ACM
+19,Male,0.5,74,2.68,2.73,0.9,8.0,Average (Mix of healthy and unhealthy),1-2 days,
+21,Male,7.2,78,3.32,3.21,1.6,6.1,Average (Mix of healthy and unhealthy),1-2 days,
+18,Male,4.1,25,3.04,3.11,0.9,6.9,"Poor (Mostly processed foods, soft drinks, limited vegetables)",5-6 days,AIAA
+20,Prefer not to say,0.5,24,2.33,2.39,5.5,6.9,Average (Mix of healthy and unhealthy),0 days,"IEEE, ACM"
+20,Male,5.1,58,3.21,3.16,2.6,6.8,"Good (Mostly balanced, some fast food/unhealthy snacks)",3-4 days,"IEEE, ACM"
+23,Male,1.7,49,2.67,2.72,5.9,6.8,Very Poor (Highly reliant on junk food and caffeine),5-6 days,
+19,Male,1.0,55,2.29,2.45,12.3,6.6,"Good (Mostly balanced, some fast food/unhealthy snacks)",1-2 days,"IEEE, ACM"
+21,Male,2.1,55,2.75,2.7,8.2,7.3,"Poor (Mostly processed foods, soft drinks, limited vegetables)",7 days,"IEEE, ACM"
+23,Male,3.7,53,2.9,2.91,4.3,5.3,"Poor (Mostly processed foods, soft drinks, limited vegetables)",0 days,
+20,Male,2.9,82,3.25,3.25,1.1,7.6,"Poor (Mostly processed foods, soft drinks, limited vegetables)",3-4 days,
+22,Male,1.3,70,3.0,3,3.7,7.6,Average (Mix of healthy and unhealthy),5-6 days,
+19,Female,2.2,72,3.07,3.07,2.7,5.7,Average (Mix of healthy and unhealthy),3-4 days,
+21,Male,6.7,58,3.4,3.42,0.8,6.3,"Good (Mostly balanced, some fast food/unhealthy snacks)",1-2 days,LES
+20,Male,0.5,72,2.56,2.7,0.5,4.5,Average (Mix of healthy and unhealthy),1-2 days,
+21,Male,0.5,51,2.42,2.47,7.9,8.4,Average (Mix of healthy and unhealthy),0 days,IEEE
+22,Male,0.7,59,2.82,2.76,4.8,7.9,"Excellent (Well-balanced, fresh food)",1-2 days,"IEEE, ACM"
+20,Male,10.0,58,3.75,3.72,3.6,5.7,"Good (Mostly balanced, some fast food/unhealthy snacks)",5-6 days,"IEEE, ACM"
+20,Male,1.7,50,2.48,2.42,6.6,9.5,Average (Mix of healthy and unhealthy),5-6 days,
+19,Male,2.0,37,2.83,2.76,4.8,6.4,Average (Mix of healthy and unhealthy),0 days,AIAA
+19,Male,3.1,37,3.0,2.91,2.4,7.9,"Good (Mostly balanced, some fast food/unhealthy snacks)",1-2 days,
+22,Male,3.4,46,2.65,2.65,1.7,6.7,Average (Mix of healthy and unhealthy),0 days,
+20,Male,2.4,79,2.89,2.83,3.7,9.0,Average (Mix of healthy and unhealthy),1-2 days,LES
+19,Male,0.5,24,2.56,2.45,3.2,7.1,Average (Mix of healthy and unhealthy),1-2 days,
+18,Male,2.0,43,2.98,3.06,1.3,5.4,"Good (Mostly balanced, some fast food/unhealthy snacks)",1-2 days,AIAA
+21,Male,0.6,60,2.45,2.58,3.1,7.1,Average (Mix of healthy and unhealthy),5-6 days,"IEEE, ACM"
+23,Female,6.1,71,3.18,3.11,2.3,4.2,"Good (Mostly balanced, some fast food/unhealthy snacks)",1-2 days,
+20,Male,3.0,60,3.06,3.12,4.1,5.5,Average (Mix of healthy and unhealthy),0 days,
+22,Prefer not to say,5.5,29,2.71,2.82,4.0,9.4,Average (Mix of healthy and unhealthy),7 days,
+20,Male,2.2,37,2.77,2.87,0.6,8.1,Average (Mix of healthy and unhealthy),1-2 days,
+20,Prefer not to say,2.0,24,2.1,2.21,1.4,5.2,Very Poor (Highly reliant on junk food and caffeine),0 days,
+20,Male,1.9,51,2.65,2.65,5.3,6.2,"Poor (Mostly processed foods, soft drinks, limited vegetables)",1-2 days,LES
+19,Male,3.5,73,3.19,3.23,2.4,5.5,"Excellent (Well-balanced, fresh food)",3-4 days,
+21,Male,5.8,54,2.94,3.07,3.4,7.1,"Good (Mostly balanced, some fast food/unhealthy snacks)",3-4 days,
+19,Male,4.7,49,2.77,2.76,3.5,6.9,Average (Mix of healthy and unhealthy),0 days,AIAA
+20,Male,0.5,43,2.41,2.42,0.5,4.3,"Poor (Mostly processed foods, soft drinks, limited vegetables)",7 days,ACM
+23,Male,1.5,29,2.78,2.68,0.7,6.5,"Poor (Mostly processed foods, soft drinks, limited vegetables)",5-6 days,"IEEE, ACM"
+20,Prefer not to say,1.2,68,3.11,3.04,0.5,7.4,"Good (Mostly balanced, some fast food/unhealthy snacks)",5-6 days,AIAA
+19,Male,0.6,60,2.65,2.57,0.9,6.2,"Excellent (Well-balanced, fresh food)",0 days,LES
+20,Male,4.1,52,3.36,3.39,3.6,8.6,"Excellent (Well-balanced, fresh food)",1-2 days,IEEE
+20,Male,6.2,23,2.78,2.78,3.1,5.5,Very Poor (Highly reliant on junk food and caffeine),7 days,
+20,Male,10.0,51,3.25,3.31,1.3,5.5,Average (Mix of healthy and unhealthy),3-4 days,
+21,Male,4.9,36,3.11,3.2,3.2,5.8,Average (Mix of healthy and unhealthy),1-2 days,
+20,Male,2.1,43,2.01,2,13.2,6.6,Average (Mix of healthy and unhealthy),1-2 days,ACM
+20,Male,0.8,18,2.43,2.46,0.5,8.0,Average (Mix of healthy and unhealthy),1-2 days,
+20,Male,1.7,15,2.7,2.46,0.9,5.6,Average (Mix of healthy and unhealthy),1-2 days,
+23,Male,1.7,58,3.04,3.07,0.5,6.8,Average (Mix of healthy and unhealthy),1-2 days,
+20,Female,1.7,45,2.71,2.72,2.5,4.4,"Excellent (Well-balanced, fresh food)",0 days,IEEE
+21,Male,7.4,54,2.98,2.91,6.8,5.1,Very Poor (Highly reliant on junk food and caffeine),1-2 days,LES
+18,Female,8.4,54,3.34,3.32,0.5,4.2,Average (Mix of healthy and unhealthy),3-4 days,ACM
+22,Female,10.0,66,3.44,3.36,6.3,5.1,Average (Mix of healthy and unhealthy),1-2 days,
+21,Male,0.5,77,2.69,2.61,2.8,7.0,Average (Mix of healthy and unhealthy),0 days,AIAA
+20,Male,0.5,81,2.84,2.91,1.3,7.2,"Good (Mostly balanced, some fast food/unhealthy snacks)",5-6 days,AIAA
+19,Male,0.9,66,2.83,2.71,4.3,3.7,Average (Mix of healthy and unhealthy),5-6 days,AIAA
+18,Prefer not to say,0.7,62,2.78,2.72,2.6,5.2,"Good (Mostly balanced, some fast food/unhealthy snacks)",7 days,
+20,Male,3.3,32,2.37,2.37,8.9,5.7,Very Poor (Highly reliant on junk food and caffeine),1-2 days,IEEE
+21,Female,2.8,42,2.55,2.59,3.1,5.3,Average (Mix of healthy and unhealthy),3-4 days,
+18,Prefer not to say,4.3,100,3.27,3.22,1.0,7.7,"Poor (Mostly processed foods, soft drinks, limited vegetables)",1-2 days,"IEEE, ACM"
+20,Male,2.8,71,3.18,3.23,2.1,7.5,"Excellent (Well-balanced, fresh food)",1-2 days,ACM
+20,Male,2.9,44,2.99,2.97,1.8,6.4,Average (Mix of healthy and unhealthy),3-4 days,
+21,Female,3.7,78,2.73,2.87,4.6,5.5,"Poor (Mostly processed foods, soft drinks, limited vegetables)",0 days,AIAA
+21,Male,1.9,44,2.54,2.6,5.5,4.5,Very Poor (Highly reliant on junk food and caffeine),1-2 days,LES
+20,Male,0.5,57,2.86,2.84,8.5,7.8,Average (Mix of healthy and unhealthy),7 days,AIAA
+22,Male,3.2,28,2.6,2.61,0.9,6.8,"Good (Mostly balanced, some fast food/unhealthy snacks)",7 days,
+19,Male,3.5,51,2.98,2.82,5.1,5.7,"Good (Mostly balanced, some fast food/unhealthy snacks)",1-2 days,
+19,Female,0.5,68,2.47,2.37,8.1,6.1,"Good (Mostly balanced, some fast food/unhealthy snacks)",5-6 days,
+19,Male,10.0,60,3.12,3.08,7.6,7.3,Average (Mix of healthy and unhealthy),1-2 days,IEEE
+20,Female,0.5,48,2.7,2.73,5.8,5.2,Average (Mix of healthy and unhealthy),0 days,IEEE
+19,Prefer not to say,1.8,43,2.0,2,13.7,5.8,"Poor (Mostly processed foods, soft drinks, limited vegetables)",1-2 days,
+20,Male,0.5,70,2.93,2.75,0.5,8.6,"Excellent (Well-balanced, fresh food)",1-2 days,"IEEE, ACM"
+19,Male,3.8,47,2.82,2.83,0.5,5.9,Average (Mix of healthy and unhealthy),1-2 days,
+23,Male,1.7,41,2.29,2.28,5.5,7.7,"Good (Mostly balanced, some fast food/unhealthy snacks)",1-2 days,IEEE
+22,Male,10.0,28,3.34,3.37,1.4,6.8,"Good (Mostly balanced, some fast food/unhealthy snacks)",3-4 days,
+21,Male,0.6,76,2.13,2.08,14.0,5.0,"Good (Mostly balanced, some fast food/unhealthy snacks)",3-4 days,
+20,Male,9.4,25,3.39,3.35,3.9,8.7,"Good (Mostly balanced, some fast food/unhealthy snacks)",7 days,"IEEE, ACM"
+22,Female,4.8,100,3.51,3.57,5.2,5.7,Average (Mix of healthy and unhealthy),0 days,AIAA
+21,Male,0.6,53,2.78,2.87,3.4,6.8,"Good (Mostly balanced, some fast food/unhealthy snacks)",3-4 days,LES
+19,Male,1.7,68,2.69,2.74,6.4,6.9,"Poor (Mostly processed foods, soft drinks, limited vegetables)",1-2 days,ACM
+20,Male,0.8,28,2.57,2.62,4.0,6.6,Average (Mix of healthy and unhealthy),1-2 days,
+20,Male,6.4,48,2.85,2.82,0.7,4.6,Very Poor (Highly reliant on junk food and caffeine),5-6 days,IEEE
+20,Male,0.5,72,2.65,2.82,0.5,5.2,"Good (Mostly balanced, some fast food/unhealthy snacks)",1-2 days,AIAA
+20,Female,0.5,67,2.67,2.76,0.5,4.2,Average (Mix of healthy and unhealthy),3-4 days,LES
+20,Male,0.5,100,2.6,2.6,6.8,6.4,Average (Mix of healthy and unhealthy),1-2 days,LES
+19,Male,0.5,59,2.77,2.9,0.5,8.2,"Good (Mostly balanced, some fast food/unhealthy snacks)",3-4 days,
+18,Male,10.0,15,3.32,3.31,3.2,5.3,Average (Mix of healthy and unhealthy),3-4 days,"IEEE, ACM"
+22,Male,0.5,54,2.49,2.49,4.2,6.5,"Good (Mostly balanced, some fast food/unhealthy snacks)",5-6 days,LES
+18,Female,0.9,61,2.68,2.76,4.6,5.1,Average (Mix of healthy and unhealthy),1-2 days,"IEEE, ACM"
+20,Female,5.3,20,3.16,3.11,2.7,5.8,Average (Mix of healthy and unhealthy),1-2 days,
+21,Male,2.6,94,3.32,3.3,4.2,8.2,"Excellent (Well-balanced, fresh food)",5-6 days,ACM
+19,Male,3.4,71,3.01,2.96,1.3,8.0,"Good (Mostly balanced, some fast food/unhealthy snacks)",1-2 days,"IEEE, ACM"
+19,Male,4.3,79,2.45,2.5,6.4,9.1,Very Poor (Highly reliant on junk food and caffeine),1-2 days,
+22,Male,8.8,99,3.59,3.57,1.6,7.1,"Poor (Mostly processed foods, soft drinks, limited vegetables)",0 days,
+21,Male,0.5,97,2.24,2.37,14.0,6.7,"Good (Mostly balanced, some fast food/unhealthy snacks)",1-2 days,ACM
+22,Male,10.0,40,2.9,3.03,0.5,5.7,Very Poor (Highly reliant on junk food and caffeine),1-2 days,LES
+20,Male,0.5,86,2.74,2.79,1.2,5.3,Average (Mix of healthy and unhealthy),1-2 days,"IEEE, ACM"
+21,Male,0.5,53,2.35,2.35,5.0,3.0,"Poor (Mostly processed foods, soft drinks, limited vegetables)",1-2 days,
+19,Male,0.7,73,2.59,2.61,8.3,6.3,Average (Mix of healthy and unhealthy),5-6 days,ACM
+19,Prefer not to say,6.4,15,3.24,3.3,0.7,8.4,"Poor (Mostly processed foods, soft drinks, limited vegetables)",5-6 days,
+20,Male,1.0,37,2.31,2.3,9.1,5.7,Average (Mix of healthy and unhealthy),1-2 days,
+22,Male,5.0,48,2.84,2.84,2.1,5.3,"Good (Mostly balanced, some fast food/unhealthy snacks)",7 days,
+19,Male,1.0,97,2.35,2.31,8.4,8.7,Very Poor (Highly reliant on junk food and caffeine),0 days,ACM
+19,Male,3.6,96,3.24,3.12,2.5,6.3,"Poor (Mostly processed foods, soft drinks, limited vegetables)",3-4 days,AIAA
+22,Female,5.2,49,2.71,2.68,4.0,8.1,Average (Mix of healthy and unhealthy),5-6 days,ACM
+22,Female,5.8,35,2.98,2.89,12.9,9.1,"Excellent (Well-balanced, fresh food)",1-2 days,"IEEE, ACM"
+21,Male,3.6,98,2.82,2.92,14.0,5.7,Average (Mix of healthy and unhealthy),5-6 days,"IEEE, ACM"
+20,Female,1.4,40,2.07,2,14.0,5.9,Average (Mix of healthy and unhealthy),1-2 days,
+21,Male,0.5,86,2.64,2.45,4.5,6.6,"Good (Mostly balanced, some fast food/unhealthy snacks)",3-4 days,"IEEE, ACM"
+21,Female,0.5,62,2.5,2.43,12.9,6.8,Average (Mix of healthy and unhealthy),1-2 days,AIAA
+21,Male,6.4,54,2.98,3.08,3.7,5.4,"Good (Mostly balanced, some fast food/unhealthy snacks)",3-4 days,LES
+22,Male,0.5,80,2.76,2.66,2.4,5.8,Average (Mix of healthy and unhealthy),1-2 days,
+19,Male,1.0,24,2.55,2.55,0.5,6.7,Average (Mix of healthy and unhealthy),7 days,
+23,Male,2.1,100,2.32,2.21,14.0,6.3,Very Poor (Highly reliant on junk food and caffeine),1-2 days,
+21,Male,4.2,55,2.97,3.01,0.5,7.0,Average (Mix of healthy and unhealthy),3-4 days,IEEE
+19,Male,3.4,45,2.87,2.82,1.8,5.3,"Good (Mostly balanced, some fast food/unhealthy snacks)",5-6 days,
+19,Male,1.2,65,2.8,2.7,7.5,7.6,"Excellent (Well-balanced, fresh food)",1-2 days,
+19,Male,1.0,98,3.05,2.94,4.1,6.9,"Excellent (Well-balanced, fresh food)",5-6 days,
+19,Male,2.8,79,2.66,2.6,1.2,6.7,Very Poor (Highly reliant on junk food and caffeine),1-2 days,
+21,Female,0.9,80,3.02,2.99,0.5,7.6,"Good (Mostly balanced, some fast food/unhealthy snacks)",1-2 days,ACM
+20,Male,1.2,87,2.95,2.96,4.9,7.8,Average (Mix of healthy and unhealthy),1-2 days,
+20,Female,1.6,64,2.56,2.57,11.7,6.2,"Poor (Mostly processed foods, soft drinks, limited vegetables)",1-2 days,AIAA
+20,Male,3.1,46,2.47,2.38,1.3,3.7,Average (Mix of healthy and unhealthy),1-2 days,
+18,Male,2.1,59,2.44,2.47,5.2,4.1,"Poor (Mostly processed foods, soft drinks, limited vegetables)",0 days,
+22,Male,1.4,27,2.44,2.56,4.3,7.5,Average (Mix of healthy and unhealthy),1-2 days,
+18,Female,4.2,70,2.89,2.83,6.8,5.8,"Poor (Mostly processed foods, soft drinks, limited vegetables)",0 days,
+21,Male,0.8,85,2.72,2.73,3.9,4.4,"Excellent (Well-balanced, fresh food)",5-6 days,ACM
+21,Male,5.9,43,2.95,2.76,2.0,7.7,"Good (Mostly balanced, some fast food/unhealthy snacks)",3-4 days,AIAA
+21,Male,2.9,60,3.28,3.12,1.0,8.8,Very Poor (Highly reliant on junk food and caffeine),3-4 days,LES
+20,Female,1.7,100,2.96,2.9,0.7,7.4,Average (Mix of healthy and unhealthy),7 days,
+21,Male,2.2,44,3.16,3.16,2.5,5.6,"Good (Mostly balanced, some fast food/unhealthy snacks)",3-4 days,
+20,Male,0.5,45,2.7,2.77,4.1,7.9,"Poor (Mostly processed foods, soft drinks, limited vegetables)",3-4 days,"IEEE, ACM"
+20,Male,1.3,69,2.53,2.48,2.3,4.9,Average (Mix of healthy and unhealthy),0 days,AIAA
+18,Male,3.1,43,2.55,2.63,0.5,5.5,Very Poor (Highly reliant on junk food and caffeine),3-4 days,AIAA
+19,Prefer not to say,0.5,28,2.7,2.77,0.5,5.9,"Good (Mostly balanced, some fast food/unhealthy snacks)",1-2 days,AIAA
+20,Male,1.0,59,2.59,2.53,8.0,7.0,"Good (Mostly balanced, some fast food/unhealthy snacks)",1-2 days,
+21,Female,2.1,58,2.82,2.81,4.8,6.9,"Good (Mostly balanced, some fast food/unhealthy snacks)",5-6 days,AIAA
+22,Female,1.7,76,2.81,2.91,13.2,5.9,Average (Mix of healthy and unhealthy),5-6 days,IEEE
+20,Male,0.5,72,3.05,3.06,4.0,5.9,"Good (Mostly balanced, some fast food/unhealthy snacks)",0 days,
+19,Male,1.8,82,2.86,2.89,1.6,6.6,Average (Mix of healthy and unhealthy),1-2 days,IEEE
+20,Male,0.9,87,2.92,2.92,0.7,6.1,"Poor (Mostly processed foods, soft drinks, limited vegetables)",3-4 days,AIAA
+19,Male,4.1,71,2.82,2.84,9.6,4.6,"Good (Mostly balanced, some fast food/unhealthy snacks)",1-2 days,
+18,Male,0.5,82,2.5,2.65,0.5,6.1,Very Poor (Highly reliant on junk food and caffeine),7 days,"IEEE, ACM"
+21,Male,6.8,84,2.84,2.82,6.4,5.5,Average (Mix of healthy and unhealthy),3-4 days,
+20,Male,0.5,58,2.67,2.73,0.5,6.2,"Poor (Mostly processed foods, soft drinks, limited vegetables)",0 days,
+19,Male,3.0,46,2.18,2.21,12.6,6.2,Very Poor (Highly reliant on junk food and caffeine),7 days,
+19,Female,5.6,97,3.18,3.23,0.9,3.0,Average (Mix of healthy and unhealthy),3-4 days,ACM
+20,Male,0.5,74,2.59,2.59,2.0,5.2,Very Poor (Highly reliant on junk food and caffeine),5-6 days,
+19,Male,1.3,54,2.85,2.83,0.7,6.3,Average (Mix of healthy and unhealthy),7 days,
+20,Male,0.9,60,3.4,3.45,2.7,8.3,"Good (Mostly balanced, some fast food/unhealthy snacks)",3-4 days,
+19,Male,5.9,32,2.7,2.67,8.7,7.7,"Good (Mostly balanced, some fast food/unhealthy snacks)",7 days,LES
+20,Male,0.9,84,2.76,2.85,4.0,5.6,Average (Mix of healthy and unhealthy),3-4 days,IEEE
+20,Male,7.8,59,2.92,2.95,7.2,6.7,Average (Mix of healthy and unhealthy),0 days,
+20,Female,7.6,59,3.16,3.18,9.4,7.1,"Good (Mostly balanced, some fast food/unhealthy snacks)",3-4 days,
+19,Male,1.7,52,2.99,3.01,0.9,4.1,Average (Mix of healthy and unhealthy),7 days,
+19,Female,3.5,74,3.35,3.27,1.0,6.8,"Good (Mostly balanced, some fast food/unhealthy snacks)",3-4 days,
+20,Male,0.5,55,2.63,2.63,1.3,6.7,Average (Mix of healthy and unhealthy),3-4 days,IEEE
+20,Male,7.4,85,3.48,3.54,9.6,7.1,Average (Mix of healthy and unhealthy),1-2 days,LES
+20,Female,10.0,83,3.39,3.37,1.1,3.5,"Good (Mostly balanced, some fast food/unhealthy snacks)",3-4 days,IEEE
+20,Male,1.1,45,2.76,2.75,0.6,7.1,"Good (Mostly balanced, some fast food/unhealthy snacks)",3-4 days,
+20,Male,3.2,48,2.79,2.79,0.5,9.1,Very Poor (Highly reliant on junk food and caffeine),0 days,ACM
+19,Male,2.1,50,2.81,2.75,1.0,7.5,"Good (Mostly balanced, some fast food/unhealthy snacks)",3-4 days,
+22,Male,2.8,100,3.3,3.26,1.4,6.3,"Poor (Mostly processed foods, soft drinks, limited vegetables)",5-6 days,IEEE
+19,Male,3.8,85,3.2,3.16,1.3,7.6,"Good (Mostly balanced, some fast food/unhealthy snacks)",1-2 days,AIAA
+21,Male,1.4,68,2.52,2.53,0.7,6.7,"Poor (Mostly processed foods, soft drinks, limited vegetables)",3-4 days,LES
+20,Male,1.4,90,2.82,3.04,3.8,5.0,"Poor (Mostly processed foods, soft drinks, limited vegetables)",1-2 days,AIAA
+20,Male,0.5,49,2.05,2.07,11.0,5.7,Average (Mix of healthy and unhealthy),1-2 days,
+19,Male,2.0,70,2.57,2.65,11.5,7.5,"Poor (Mostly processed foods, soft drinks, limited vegetables)",3-4 days,IEEE
+20,Male,0.9,59,2.67,2.7,0.8,4.2,"Good (Mostly balanced, some fast food/unhealthy snacks)",3-4 days,AIAA
+19,Male,3.9,73,3.29,3.16,0.5,7.2,"Good (Mostly balanced, some fast food/unhealthy snacks)",3-4 days,AIAA
+20,Male,1.8,69,2.8,2.77,3.0,8.4,Average (Mix of healthy and unhealthy),1-2 days,AIAA
+22,Female,2.2,76,2.72,2.73,1.0,5.7,"Good (Mostly balanced, some fast food/unhealthy snacks)",1-2 days,
+21,Prefer not to say,1.4,60,2.53,2.47,3.0,9.3,Average (Mix of healthy and unhealthy),0 days,
+20,Male,0.7,56,2.68,2.69,3.2,9.1,Average (Mix of healthy and unhealthy),5-6 days,
+22,Male,0.7,55,3.04,3.03,1.0,9.2,"Good (Mostly balanced, some fast food/unhealthy snacks)",1-2 days,ACM
+19,Male,5.4,85,3.27,3.29,0.5,7.2,"Poor (Mostly processed foods, soft drinks, limited vegetables)",5-6 days,IEEE
+19,Male,0.5,56,2.33,2.32,3.8,4.6,"Poor (Mostly processed foods, soft drinks, limited vegetables)",1-2 days,ACM
+20,Female,0.5,69,2.71,2.64,2.9,6.7,Average (Mix of healthy and unhealthy),1-2 days,
+19,Male,1.4,66,3.0,2.97,2.9,6.5,"Excellent (Well-balanced, fresh food)",3-4 days,LES
+19,Male,1.4,36,2.69,2.76,1.0,4.9,"Good (Mostly balanced, some fast food/unhealthy snacks)",3-4 days,
+21,Male,0.5,15,2.31,2.3,10.0,7.7,Average (Mix of healthy and unhealthy),3-4 days,"IEEE, ACM"
+19,Female,1.1,39,2.96,3.05,0.6,5.3,Average (Mix of healthy and unhealthy),3-4 days,LES
+19,Female,4.0,72,3.34,3.38,0.5,7.4,"Good (Mostly balanced, some fast food/unhealthy snacks)",7 days,ACM
+20,Male,0.6,100,2.43,2.44,2.3,7.5,"Poor (Mostly processed foods, soft drinks, limited vegetables)",1-2 days,AIAA
+22,Male,0.6,39,2.87,2.95,0.5,5.0,"Excellent (Well-balanced, fresh food)",3-4 days,
+19,Male,0.5,46,2.28,2.18,14.0,7.7,"Good (Mostly balanced, some fast food/unhealthy snacks)",3-4 days,LES
+19,Male,0.5,42,2.88,2.99,3.2,8.7,"Good (Mostly balanced, some fast food/unhealthy snacks)",0 days,
+20,Male,4.0,40,2.73,2.91,3.2,6.1,Average (Mix of healthy and unhealthy),3-4 days,
+21,Male,0.5,31,2.41,2.47,7.6,4.8,"Poor (Mostly processed foods, soft drinks, limited vegetables)",3-4 days,
+20,Male,0.5,83,2.79,2.88,4.1,7.3,"Good (Mostly balanced, some fast food/unhealthy snacks)",3-4 days,ACM
+21,Male,1.2,80,2.69,2.74,2.9,5.8,"Good (Mostly balanced, some fast food/unhealthy snacks)",0 days,
+18,Male,2.4,31,2.8,2.85,4.3,8.8,"Excellent (Well-balanced, fresh food)",0 days,LES
+20,Male,7.9,51,3.34,3.29,0.5,4.6,"Good (Mostly balanced, some fast food/unhealthy snacks)",5-6 days,LES
+19,Male,7.0,45,2.79,2.91,4.2,7.0,Average (Mix of healthy and unhealthy),0 days,IEEE
+21,Male,1.6,38,2.48,2.52,9.3,9.2,"Poor (Mostly processed foods, soft drinks, limited vegetables)",1-2 days,
+21,Female,0.7,44,2.65,2.59,0.9,6.4,Average (Mix of healthy and unhealthy),5-6 days,LES
+23,Male,2.1,82,3.07,3.09,0.9,5.4,Average (Mix of healthy and unhealthy),5-6 days,
+20,Male,0.5,48,2.35,2.31,14.0,7.5,Average (Mix of healthy and unhealthy),0 days,AIAA
+18,Male,2.4,67,2.91,2.98,0.8,5.9,Average (Mix of healthy and unhealthy),0 days,
+20,Male,3.7,53,3.1,2.96,4.2,8.4,Average (Mix of healthy and unhealthy),3-4 days,AIAA
+19,Female,2.2,68,2.95,2.97,1.0,5.4,"Poor (Mostly processed foods, soft drinks, limited vegetables)",3-4 days,
+20,Female,1.8,66,2.78,2.67,0.8,6.0,"Good (Mostly balanced, some fast food/unhealthy snacks)",1-2 days,
+18,Male,3.8,54,3.0,2.96,1.9,7.0,Average (Mix of healthy and unhealthy),3-4 days,
+21,Male,0.8,41,2.56,2.6,5.4,6.4,"Poor (Mostly processed foods, soft drinks, limited vegetables)",5-6 days,ACM
+21,Female,3.4,89,2.8,2.77,12.2,8.4,Average (Mix of healthy and unhealthy),7 days,
+21,Female,3.4,67,2.85,2.93,0.8,6.1,"Poor (Mostly processed foods, soft drinks, limited vegetables)",1-2 days,ACM
+21,Male,1.5,65,2.64,2.63,7.6,9.0,"Excellent (Well-balanced, fresh food)",1-2 days,ACM
+22,Male,1.6,46,2.77,2.75,1.4,7.1,Very Poor (Highly reliant on junk food and caffeine),5-6 days,
+20,Male,3.0,59,2.84,2.86,7.1,6.6,"Poor (Mostly processed foods, soft drinks, limited vegetables)",0 days,AIAA
+19,Male,1.7,67,3.1,2.96,0.5,6.9,Average (Mix of healthy and unhealthy),1-2 days,ACM
+21,Male,0.5,57,2.46,2.48,2.2,5.4,Average (Mix of healthy and unhealthy),0 days,
+19,Male,8.9,64,2.92,2.82,5.3,6.8,Average (Mix of healthy and unhealthy),1-2 days,
+19,Female,2.8,88,3.06,3.11,0.5,8.3,"Poor (Mostly processed foods, soft drinks, limited vegetables)",1-2 days,ACM
+19,Male,0.9,77,3.11,3.12,6.4,7.1,"Excellent (Well-balanced, fresh food)",5-6 days,
+18,Male,1.6,100,3.26,3.12,0.5,6.4,Average (Mix of healthy and unhealthy),0 days,
+21,Female,1.2,50,2.59,2.52,4.3,3.5,"Poor (Mostly processed foods, soft drinks, limited vegetables)",3-4 days,
+20,Female,0.7,34,2.5,2.52,4.9,4.0,Average (Mix of healthy and unhealthy),1-2 days,
+21,Female,1.8,41,2.64,2.64,4.5,6.3,"Excellent (Well-balanced, fresh food)",7 days,IEEE
+20,Male,1.1,24,2.46,2.46,0.6,5.8,Average (Mix of healthy and unhealthy),7 days,LES
+19,Male,10.0,59,3.42,3.32,10.2,7.1,"Poor (Mostly processed foods, soft drinks, limited vegetables)",3-4 days,
+21,Male,4.1,45,3.1,3.11,2.1,6.1,"Good (Mostly balanced, some fast food/unhealthy snacks)",1-2 days,AIAA
+21,Prefer not to say,1.3,97,2.49,2.46,10.8,6.8,"Good (Mostly balanced, some fast food/unhealthy snacks)",1-2 days,
+23,Male,3.8,69,3.18,3.18,14.0,6.9,"Poor (Mostly processed foods, soft drinks, limited vegetables)",5-6 days,ACM
+20,Male,0.5,59,2.9,2.88,1.2,5.7,Average (Mix of healthy and unhealthy),1-2 days,"IEEE, ACM"
+22,Female,5.6,69,3.45,3.41,0.7,5.1,"Good (Mostly balanced, some fast food/unhealthy snacks)",5-6 days,ACM
+20,Male,0.6,73,2.9,2.91,0.8,5.8,Average (Mix of healthy and unhealthy),1-2 days,
+19,Male,3.3,15,2.43,2.53,5.0,8.3,"Poor (Mostly processed foods, soft drinks, limited vegetables)",3-4 days,
+21,Female,1.7,100,2.75,2.68,1.8,4.5,"Poor (Mostly processed foods, soft drinks, limited vegetables)",3-4 days,AIAA
+19,Prefer not to say,2.4,53,2.32,2.44,10.6,4.6,"Poor (Mostly processed foods, soft drinks, limited vegetables)",3-4 days,LES
+20,Male,0.5,38,2.51,2.56,7.6,7.8,Average (Mix of healthy and unhealthy),1-2 days,IEEE
+22,Male,1.5,85,2.64,2.62,1.9,7.4,Very Poor (Highly reliant on junk food and caffeine),3-4 days,LES
+21,Female,7.6,50,3.17,3.19,2.4,5.4,Average (Mix of healthy and unhealthy),3-4 days,LES
+22,Female,0.7,83,2.64,2.58,7.5,6.7,Average (Mix of healthy and unhealthy),0 days,ACM
+18,Male,8.7,94,3.46,3.55,0.6,6.5,Average (Mix of healthy and unhealthy),1-2 days,
+20,Male,4.0,79,2.89,2.89,3.6,9.4,Average (Mix of healthy and unhealthy),5-6 days,AIAA
+21,Male,3.3,35,2.63,2.6,7.0,5.8,"Good (Mostly balanced, some fast food/unhealthy snacks)",1-2 days,"IEEE, ACM"
+19,Male,0.5,61,2.82,2.73,0.7,7.2,"Good (Mostly balanced, some fast food/unhealthy snacks)",5-6 days,
+22,Male,1.6,100,2.49,2.42,0.5,7.4,Average (Mix of healthy and unhealthy),1-2 days,ACM
+18,Male,0.6,49,2.2,2.18,14.0,5.5,"Good (Mostly balanced, some fast food/unhealthy snacks)",3-4 days,
+21,Male,1.8,98,3.14,3.07,2.1,7.0,"Good (Mostly balanced, some fast food/unhealthy snacks)",1-2 days,
+20,Female,10.0,15,3.36,3.38,7.5,10.0,"Poor (Mostly processed foods, soft drinks, limited vegetables)",1-2 days,AIAA
+18,Prefer not to say,1.1,78,2.84,2.85,6.9,7.2,Average (Mix of healthy and unhealthy),1-2 days,"IEEE, ACM"
+20,Male,5.9,42,2.43,2.36,11.7,5.3,"Poor (Mostly processed foods, soft drinks, limited vegetables)",3-4 days,LES
+21,Female,1.2,46,2.65,2.58,4.5,7.3,"Good (Mostly balanced, some fast food/unhealthy snacks)",3-4 days,
+19,Male,0.9,39,2.42,2.46,0.7,4.7,"Good (Mostly balanced, some fast food/unhealthy snacks)",3-4 days,IEEE
+20,Male,1.8,61,2.87,2.92,4.7,4.5,"Poor (Mostly processed foods, soft drinks, limited vegetables)",3-4 days,LES
+21,Female,0.7,72,2.32,2.46,5.8,5.8,Average (Mix of healthy and unhealthy),1-2 days,AIAA
+22,Male,1.9,50,2.97,2.99,2.7,8.1,Average (Mix of healthy and unhealthy),0 days,
+23,Male,2.7,53,3.09,3.19,0.7,4.6,"Good (Mostly balanced, some fast food/unhealthy snacks)",1-2 days,
+20,Male,2.0,34,2.52,2.49,1.0,7.7,"Poor (Mostly processed foods, soft drinks, limited vegetables)",1-2 days,
+20,Male,0.6,72,2.34,2.36,9.5,3.1,"Poor (Mostly processed foods, soft drinks, limited vegetables)",5-6 days,
+21,Female,1.5,71,2.55,2.55,3.2,6.3,Average (Mix of healthy and unhealthy),3-4 days,ACM
+18,Male,2.2,23,2.61,2.61,7.5,4.3,Average (Mix of healthy and unhealthy),1-2 days,IEEE
+22,Male,2.9,56,2.99,2.97,1.2,5.9,"Excellent (Well-balanced, fresh food)",1-2 days,IEEE
+20,Male,1.3,53,2.86,2.92,0.5,6.3,Average (Mix of healthy and unhealthy),5-6 days,
+18,Male,2.8,30,2.88,2.9,4.3,8.0,"Good (Mostly balanced, some fast food/unhealthy snacks)",5-6 days,
+20,Male,9.3,65,3.63,3.66,7.6,5.5,Average (Mix of healthy and unhealthy),5-6 days,
+19,Male,3.4,15,2.34,2.28,2.3,7.1,"Poor (Mostly processed foods, soft drinks, limited vegetables)",1-2 days,IEEE
+21,Male,0.5,77,3.09,3.07,1.5,8.6,"Poor (Mostly processed foods, soft drinks, limited vegetables)",3-4 days,"IEEE, ACM"
+20,Male,0.5,48,2.46,2.44,11.0,5.3,Average (Mix of healthy and unhealthy),1-2 days,"IEEE, ACM"
+19,Male,0.5,76,2.79,2.84,3.0,4.0,Average (Mix of healthy and unhealthy),1-2 days,"IEEE, ACM"
+20,Male,1.9,67,3.02,2.99,2.1,6.7,"Good (Mostly balanced, some fast food/unhealthy snacks)",0 days,
+19,Male,1.7,52,2.4,2.39,7.7,5.1,"Good (Mostly balanced, some fast food/unhealthy snacks)",3-4 days,ACM
+21,Male,0.9,43,2.51,2.46,3.4,6.6,Average (Mix of healthy and unhealthy),1-2 days,
+21,Male,1.1,40,2.68,2.68,1.6,6.0,"Good (Mostly balanced, some fast food/unhealthy snacks)",1-2 days,ACM
+22,Male,1.0,27,2.67,2.62,3.9,6.4,Average (Mix of healthy and unhealthy),5-6 days,
+22,Male,3.8,45,2.97,2.8,3.5,4.7,"Good (Mostly balanced, some fast food/unhealthy snacks)",3-4 days,LES
+20,Female,5.0,15,2.68,2.54,3.7,7.8,Average (Mix of healthy and unhealthy),3-4 days,AIAA
+20,Female,2.5,52,2.85,2.93,1.3,4.7,"Good (Mostly balanced, some fast food/unhealthy snacks)",1-2 days,LES
+21,Prefer not to say,3.3,51,2.93,2.84,4.4,9.0,"Excellent (Well-balanced, fresh food)",1-2 days,AIAA
+18,Male,1.7,75,2.93,2.97,6.5,7.5,"Excellent (Well-balanced, fresh food)",3-4 days,
+21,Male,0.8,56,2.75,2.73,1.9,5.7,"Good (Mostly balanced, some fast food/unhealthy snacks)",3-4 days,
+20,Female,0.5,84,2.75,2.66,6.0,7.3,"Good (Mostly balanced, some fast food/unhealthy snacks)",3-4 days,IEEE
+20,Male,0.5,52,2.18,2.14,5.4,5.1,Average (Mix of healthy and unhealthy),1-2 days,ACM
+19,Male,0.5,53,2.32,2.42,8.4,5.4,Very Poor (Highly reliant on junk food and caffeine),3-4 days,
+22,Female,2.9,72,2.92,2.97,0.5,6.6,Average (Mix of healthy and unhealthy),1-2 days,ACM
+20,Male,1.5,47,2.13,2.13,14.0,7.4,Average (Mix of healthy and unhealthy),3-4 days,
+22,Male,2.2,44,2.5,2.6,1.3,6.6,Average (Mix of healthy and unhealthy),1-2 days,
+19,Female,1.6,21,2.63,2.62,2.2,6.3,"Poor (Mostly processed foods, soft drinks, limited vegetables)",5-6 days,LES
+19,Female,1.7,49,2.9,2.9,1.6,8.3,"Good (Mostly balanced, some fast food/unhealthy snacks)",0 days,ACM
+20,Male,0.6,69,2.83,2.75,3.3,5.2,"Good (Mostly balanced, some fast food/unhealthy snacks)",1-2 days,
+19,Male,1.2,54,2.67,2.66,3.3,6.9,"Good (Mostly balanced, some fast food/unhealthy snacks)",0 days,"IEEE, ACM"
+21,Male,2.9,47,2.7,2.81,1.9,6.2,Average (Mix of healthy and unhealthy),3-4 days,
+19,Male,1.9,88,2.95,2.93,0.5,6.2,"Poor (Mostly processed foods, soft drinks, limited vegetables)",5-6 days,
+21,Male,10.0,29,3.58,3.54,1.7,3.0,"Good (Mostly balanced, some fast food/unhealthy snacks)",1-2 days,
+18,Male,0.5,61,2.55,2.6,3.9,3.0,Average (Mix of healthy and unhealthy),5-6 days,
+18,Female,3.0,55,2.85,2.89,0.6,6.5,"Good (Mostly balanced, some fast food/unhealthy snacks)",1-2 days,LES
+19,Male,4.0,55,2.98,2.97,2.9,5.5,"Good (Mostly balanced, some fast food/unhealthy snacks)",1-2 days,
+19,Male,8.9,100,3.51,3.55,1.8,5.2,"Poor (Mostly processed foods, soft drinks, limited vegetables)",5-6 days,"IEEE, ACM"
+21,Male,1.7,54,2.56,2.6,3.5,7.0,"Excellent (Well-balanced, fresh food)",0 days,"IEEE, ACM"
+20,Male,5.4,81,3.33,3.24,0.8,4.5,Average (Mix of healthy and unhealthy),1-2 days,
+21,Male,0.5,65,2.57,2.61,2.2,6.4,"Good (Mostly balanced, some fast food/unhealthy snacks)",3-4 days,"IEEE, ACM"
+21,Male,2.2,66,3.02,3.25,4.2,6.7,Average (Mix of healthy and unhealthy),3-4 days,"IEEE, ACM"
+19,Male,2.0,17,2.77,2.83,4.2,8.6,"Good (Mostly balanced, some fast food/unhealthy snacks)",3-4 days,AIAA
+19,Male,0.5,47,2.67,2.59,8.8,6.9,Average (Mix of healthy and unhealthy),1-2 days,"IEEE, ACM"
+20,Male,9.5,77,3.66,3.66,2.3,6.4,"Good (Mostly balanced, some fast food/unhealthy snacks)",7 days,
+20,Male,10.0,36,3.45,3.54,2.0,5.6,Average (Mix of healthy and unhealthy),1-2 days,AIAA
+23,Male,3.4,82,2.41,2.3,9.4,5.2,"Poor (Mostly processed foods, soft drinks, limited vegetables)",1-2 days,
+22,Male,1.2,59,2.86,2.87,2.3,6.7,Average (Mix of healthy and unhealthy),5-6 days,
+18,Male,4.5,100,3.27,3.12,2.8,6.5,Average (Mix of healthy and unhealthy),1-2 days,
+22,Male,0.5,69,2.59,2.62,2.7,3.0,Average (Mix of healthy and unhealthy),1-2 days,"IEEE, ACM"
+20,Male,0.5,56,2.44,2.46,7.0,7.6,Average (Mix of healthy and unhealthy),1-2 days,IEEE
+19,Male,3.5,33,2.36,2.34,14.0,5.7,Average (Mix of healthy and unhealthy),1-2 days,
+21,Male,0.5,62,2.61,2.72,2.1,5.2,Average (Mix of healthy and unhealthy),7 days,ACM
+20,Male,2.2,62,2.43,2.4,7.5,5.1,Average (Mix of healthy and unhealthy),1-2 days,
+18,Male,0.5,15,2.37,2.34,2.3,6.5,"Good (Mostly balanced, some fast food/unhealthy snacks)",1-2 days,"IEEE, ACM"
+20,Male,1.9,47,2.58,2.53,1.1,6.1,Average (Mix of healthy and unhealthy),5-6 days,"IEEE, ACM"
+20,Male,0.9,66,2.99,2.94,1.5,6.1,"Excellent (Well-balanced, fresh food)",3-4 days,LES
+18,Female,5.9,81,3.12,3.09,1.2,5.9,"Good (Mostly balanced, some fast food/unhealthy snacks)",7 days,"IEEE, ACM"
+20,Male,0.5,94,2.95,2.8,0.9,6.6,"Excellent (Well-balanced, fresh food)",1-2 days,IEEE
+19,Male,4.0,87,2.77,2.7,0.5,5.2,Average (Mix of healthy and unhealthy),3-4 days,ACM
+18,Male,3.4,44,2.56,2.43,6.1,4.1,"Poor (Mostly processed foods, soft drinks, limited vegetables)",1-2 days,
+19,Male,3.2,57,2.99,2.97,5.8,7.9,"Poor (Mostly processed foods, soft drinks, limited vegetables)",5-6 days,ACM
+20,Male,6.3,58,2.92,2.82,2.6,6.3,"Poor (Mostly processed foods, soft drinks, limited vegetables)",1-2 days,ACM
+21,Male,3.2,31,2.52,2.61,7.0,6.8,"Good (Mostly balanced, some fast food/unhealthy snacks)",3-4 days,ACM
+20,Male,2.0,34,2.8,2.79,7.3,5.1,"Poor (Mostly processed foods, soft drinks, limited vegetables)",1-2 days,
+21,Male,2.8,43,2.56,2.51,0.7,4.8,Average (Mix of healthy and unhealthy),1-2 days,
+22,Prefer not to say,2.0,45,2.85,2.96,1.1,7.0,Average (Mix of healthy and unhealthy),1-2 days,
+22,Male,1.8,51,2.52,2.46,5.0,5.2,"Good (Mostly balanced, some fast food/unhealthy snacks)",1-2 days,
+18,Male,1.5,48,2.42,2.51,1.0,6.3,Average (Mix of healthy and unhealthy),1-2 days,AIAA
+22,Male,10.0,15,3.38,3.48,4.2,4.2,"Good (Mostly balanced, some fast food/unhealthy snacks)",3-4 days,ACM
+18,Male,3.9,43,2.62,2.75,3.1,8.1,"Good (Mostly balanced, some fast food/unhealthy snacks)",0 days,
+19,Male,0.5,59,2.93,2.83,1.4,5.8,Very Poor (Highly reliant on junk food and caffeine),5-6 days,
+20,Male,2.5,45,2.56,2.61,0.5,3.4,Average (Mix of healthy and unhealthy),3-4 days,AIAA
+19,Male,4.7,58,3.04,3.07,3.7,6.8,"Good (Mostly balanced, some fast food/unhealthy snacks)",0 days,
+21,Male,10.0,56,3.71,3.83,0.5,6.4,Average (Mix of healthy and unhealthy),5-6 days,ACM
+20,Male,1.9,66,2.89,2.76,1.6,7.9,"Good (Mostly balanced, some fast food/unhealthy snacks)",1-2 days,
+19,Male,1.4,81,2.41,2.37,6.3,9.3,"Excellent (Well-balanced, fresh food)",1-2 days,
+21,Male,0.8,65,2.68,2.59,1.7,6.3,Average (Mix of healthy and unhealthy),3-4 days,AIAA
+21,Male,2.9,52,2.58,2.62,0.5,6.8,Average (Mix of healthy and unhealthy),0 days,AIAA
+20,Male,7.5,75,2.82,2.83,14.0,5.3,"Excellent (Well-balanced, fresh food)",5-6 days,
+22,Male,6.0,41,2.96,3.01,14.0,7.0,Average (Mix of healthy and unhealthy),3-4 days,IEEE
+19,Male,0.7,34,2.59,2.63,1.0,6.3,"Poor (Mostly processed foods, soft drinks, limited vegetables)",1-2 days,LES
+20,Male,0.7,88,2.68,2.9,3.6,7.8,"Poor (Mostly processed foods, soft drinks, limited vegetables)",5-6 days,
+19,Male,0.6,40,2.29,2.18,5.7,4.5,Average (Mix of healthy and unhealthy),0 days,
+22,Male,3.8,52,2.92,2.86,6.3,8.7,"Poor (Mostly processed foods, soft drinks, limited vegetables)",1-2 days,AIAA
+19,Male,0.5,15,2.63,2.64,1.1,5.8,Average (Mix of healthy and unhealthy),1-2 days,AIAA
+21,Male,6.2,55,2.72,2.75,14.0,6.5,Very Poor (Highly reliant on junk food and caffeine),5-6 days,LES
+19,Male,2.0,46,2.58,2.6,6.9,6.6,Average (Mix of healthy and unhealthy),1-2 days,AIAA
+19,Female,1.5,25,2.86,2.76,2.0,6.4,"Poor (Mostly processed foods, soft drinks, limited vegetables)",1-2 days,AIAA
+21,Male,3.4,98,2.97,2.97,10.7,8.0,"Poor (Mostly processed foods, soft drinks, limited vegetables)",5-6 days,ACM
+19,Male,0.7,59,2.59,2.46,5.0,6.3,"Good (Mostly balanced, some fast food/unhealthy snacks)",3-4 days,
+20,Male,8.1,75,3.37,3.28,4.1,9.8,"Poor (Mostly processed foods, soft drinks, limited vegetables)",5-6 days,"IEEE, ACM"
+21,Male,1.6,38,2.69,2.61,1.2,6.3,Average (Mix of healthy and unhealthy),1-2 days,IEEE
+20,Male,0.7,64,2.94,2.84,1.3,6.7,Average (Mix of healthy and unhealthy),3-4 days,"IEEE, ACM"
+22,Male,0.6,55,2.7,2.68,1.7,7.0,"Good (Mostly balanced, some fast food/unhealthy snacks)",3-4 days,
+21,Male,0.5,59,2.51,2.45,1.4,7.3,Very Poor (Highly reliant on junk food and caffeine),3-4 days,
+20,Male,2.4,51,2.67,2.7,1.0,6.6,Very Poor (Highly reliant on junk food and caffeine),3-4 days,
+20,Female,0.5,52,3.16,3.11,1.2,7.7,"Good (Mostly balanced, some fast food/unhealthy snacks)",0 days,AIAA
+20,Male,0.8,38,2.99,2.98,0.5,8.6,"Good (Mostly balanced, some fast food/unhealthy snacks)",1-2 days,LES
+18,Female,0.5,79,2.84,2.89,1.3,6.2,Average (Mix of healthy and unhealthy),1-2 days,
+21,Male,0.5,68,2.77,2.87,1.3,6.4,"Good (Mostly balanced, some fast food/unhealthy snacks)",3-4 days,"IEEE, ACM"
+22,Female,4.7,15,2.91,2.91,0.5,6.6,"Poor (Mostly processed foods, soft drinks, limited vegetables)",0 days,IEEE
+21,Male,0.5,81,2.84,2.67,2.6,6.1,"Poor (Mostly processed foods, soft drinks, limited vegetables)",5-6 days,
+20,Male,2.0,61,2.35,2.17,5.8,5.4,"Good (Mostly balanced, some fast food/unhealthy snacks)",1-2 days,
+20,Male,0.8,90,3.13,3.14,0.5,8.5,"Poor (Mostly processed foods, soft drinks, limited vegetables)",3-4 days,
+20,Male,4.8,55,3.17,3.24,6.4,5.7,"Good (Mostly balanced, some fast food/unhealthy snacks)",1-2 days,
+20,Male,0.8,62,2.44,2.29,0.7,5.1,"Poor (Mostly processed foods, soft drinks, limited vegetables)",7 days,
+21,Male,9.9,100,3.22,3.27,12.8,7.3,"Poor (Mostly processed foods, soft drinks, limited vegetables)",3-4 days,
+19,Male,0.5,34,2.84,2.91,0.5,6.7,"Good (Mostly balanced, some fast food/unhealthy snacks)",1-2 days,
+19,Female,0.7,93,2.66,2.66,0.7,4.0,"Excellent (Well-balanced, fresh food)",0 days,LES
+21,Male,0.5,43,2.77,2.8,2.8,6.9,Average (Mix of healthy and unhealthy),1-2 days,LES
+22,Male,6.8,48,3.08,2.99,0.5,6.4,Average (Mix of healthy and unhealthy),1-2 days,AIAA
