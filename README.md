@@ -174,46 +174,6 @@ python app.py --retrain
 
 ---
 
-## API
-
-The predictor is also available as a JSON endpoint:
-
-```bash
-curl -X POST http://127.0.0.1:5000/api/predict \
-  -H "Content-Type: application/json" \
-  -d '{
-    "model": "Gradient Boosting",
-    "age": 20,
-    "gender": "Male",
-    "study_hours": 3.5,
-    "attendance": 85,
-    "social_media": 2.0,
-    "sleep_hours": 7.0,
-    "diet": "Average",
-    "exercise": "3-4 days",
-    "societies": 1
-  }'
-```
-
-**Response:**
-
-```json
-{
-  "cgpa": 3.12,
-  "tier": "Strong Performance",
-  "color": "#00E5FF"
-}
-```
-
-**Valid values:**
-
-- `model`: `"Linear Regression"`, `"Random Forest"`, `"Gradient Boosting"`, `"Extra Trees"`, `"SVR"`
-- `gender`: `"Male"`, `"Female"`, `"Prefer not to say"`
-- `diet`: `"Very Poor"`, `"Poor"`, `"Average"`, `"Good"`, `"Excellent"`
-- `exercise`: `"0 days"`, `"1-2 days"`, `"3-4 days"`, `"5-6 days"`, `"7 days"`
-
----
-
 ## Limitations
 
 - The dataset is self-reported and may contain response bias.
