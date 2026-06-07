@@ -9,7 +9,7 @@ import pickle
 
 app = Flask(__name__)
 
-DATA_PATH   = 'data.xlsx'
+DATA_PATH   = 'cleaned_student_habits.csv'
 MODELS_PATH = 'models/trained.pkl'
 
 def get_results_and_models(force_retrain=False):

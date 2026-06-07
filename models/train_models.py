@@ -26,10 +26,21 @@ def parse_num(v):
     try: return float(v)
     except: return np.nan
 
-def load_clean_data(path='data.xlsx'):
-    df = pd.read_excel(path)
-    df.columns = ['timestamp','name','age','gender','study_hours','attendance',
-                  'cgpa','sgpa','social_media','sleep_hours','diet_quality','exercise','societies']
+def load_clean_data(path='cleaned_student_habits.csv'):
+    if path.lower().endswith('.csv'):
+        df = pd.read_csv(path)
+    else:
+        df = pd.read_excel(path, engine='openpyxl')
+
+    df.columns = [str(col).strip() for col in df.columns]
+    if len(df.columns) == 13:
+        df.columns = ['timestamp','name','age','gender','study_hours','attendance',
+                      'cgpa','sgpa','social_media','sleep_hours','diet_quality','exercise','societies']
+    elif len(df.columns) == 11:
+        df.columns = ['age','gender','study_hours','attendance',
+                      'cgpa','sgpa','social_media','sleep_hours','diet_quality','exercise','societies']
+    else:
+        raise ValueError(f'Unexpected dataset shape: expected 11 or 13 columns, got {len(df.columns)}')
 
     exercise_map = {'0 days': 0, '1-2 days': 1.5, '3-4 days': 3.5, '5-6 days': 5.5, '7 days': 7}
     diet_map = {
@@ -74,7 +85,7 @@ FEATURE_LABELS = ['Age','Gender','Study Hours','Attendance %',
 # ─────────────────────────────────────────────
 # TRAIN ALL 5 MODELS
 # ─────────────────────────────────────────────
-def train_all(data_path='data.xlsx'):
+def train_all(data_path='cleaned_student_habits.csv'):
     df = load_clean_data(data_path)
     X  = df[FEATURES]
     y  = df['cgpa']
