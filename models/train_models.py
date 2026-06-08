@@ -3,6 +3,7 @@ import numpy as np
 import re
 import pickle
 import os
+from sklearn.dummy import DummyRegressor
 from sklearn.linear_model import LinearRegression
 from sklearn.ensemble import RandomForestRegressor, GradientBoostingRegressor, ExtraTreesRegressor
 from sklearn.svm import SVR
@@ -99,6 +100,16 @@ def train_all(data_path='cleaned_student_habits.csv'):
 
     results = {}
     trained = {}
+
+    # 0. Mean CGPA Baseline
+    baseline = DummyRegressor(strategy='mean')
+    baseline.fit(X_train, y_train)
+
+    y_pred = baseline.predict(X_test)
+    cv = cross_val_score(baseline, X, y, cv=5, scoring='r2')
+
+    results['Mean Baseline'] = _metrics(y_test, y_pred, cv)
+    trained['baseline'] = {'model': baseline, 'scaler': None}
 
     # ── 1. Linear Regression
     lr = LinearRegression()

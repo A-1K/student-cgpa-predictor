@@ -35,7 +35,7 @@ RESULTS, TRAINED = get_results_and_models(force_retrain=_args.retrain)
 print("Done. Starting Flask...")
 
 MODEL_NAMES = list(RESULTS.keys())
-MODEL_KEYS  = ['linear', 'rf', 'gb', 'et', 'svr']
+MODEL_KEYS  = ['baseline', 'linear', 'rf', 'gb', 'et', 'svr']
 MODEL_MAP   = dict(zip(MODEL_NAMES, MODEL_KEYS))
 
 @app.route('/')

@@ -13,11 +13,11 @@
 
 ## Overview
 
-Habits to Grades trains and compares **5 regression models** to estimate a student's CGPA from 9 behavioral and demographic features: study hours, attendance, sleep, social media usage, diet quality, exercise frequency, society involvement, age, and gender.
+Habits to Grades trains and compares **5 regression models plus a simple Mean CGPA baseline** to estimate a student's CGPA from 9 behavioral and demographic features: study hours, attendance, sleep, social media usage, diet quality, exercise frequency, society involvement, age, and gender.
 
 The project ships as an interactive Flask dashboard with:
 
-- A **model comparison table** with MAE, RMSE, Test R^2, CV R^2, and CV standard deviation
+- A **model comparison table** with a Mean CGPA baseline, MAE, RMSE, Test R^2, CV R^2, and CV standard deviation
 - Auto-generated **model performance**, **feature importance**, **correlation heatmap**, and **cross-validation stability** charts
 - A **live CGPA predictor** that sends habits to a JSON API and returns predictions from the trained models
 
@@ -78,15 +78,19 @@ The project ships as an interactive Flask dashboard with:
    - Society membership is converted into a count.
 
 4. **Model training**
-   The project trains five regressors:
+   The project trains five regressors and one baseline model:
+   - Mean CGPA Baseline
    - Linear Regression
    - Random Forest Regressor
    - Gradient Boosting Regressor
    - Extra Trees Regressor
    - Support Vector Regressor
 
+   The Mean CGPA Baseline uses `DummyRegressor(strategy="mean")`, which predicts the training-set average CGPA for every student. It acts as a naive reference point so the regression models can be judged against a simple non-learning approach.
+
+
 5. **Evaluation**
-   Models are compared using a held-out test split and 5-fold cross-validation:
+   The baseline and ML models are compared using a held-out test split and 5-fold cross-validation:
    - **MAE**: average absolute prediction error
    - **RMSE**: larger-error-sensitive prediction error
    - **Test R^2**: variance explained on the held-out test set
@@ -105,6 +109,7 @@ The project ships as an interactive Flask dashboard with:
 
 | Model | Key Hyperparameters | Scaling |
 | --- | --- | --- |
+| Mean CGPA Baseline | `DummyRegressor(strategy="mean")` | None |
 | Linear Regression | Default | None |
 | Random Forest | `n_estimators=200`, `max_depth=6`, `min_samples_leaf=3` | None |
 | Gradient Boosting | `n_estimators=200`, `max_depth=3`, `learning_rate=0.05` | None |
@@ -115,6 +120,7 @@ The project ships as an interactive Flask dashboard with:
 
 ## Key Findings
 
+- The Mean CGPA Baseline provides a naive reference point; useful ML models should beat it on MAE, RMSE, and R^2.
 - **Attendance** is one of the strongest predictors of CGPA.
 - **Study hours** show a positive relationship with academic performance.
 - **Social media usage** tends to correlate negatively with CGPA.
@@ -166,7 +172,7 @@ python app.py
 # Open http://127.0.0.1:5000
 ```
 
-On first run, all 5 models are trained and cached to `models/trained.pkl`. Subsequent starts load the cache. To force a retrain:
+On first run, the baseline and all 5 ML models are trained and cached to `models/trained.pkl`.
 
 ```bash
 python app.py --retrain

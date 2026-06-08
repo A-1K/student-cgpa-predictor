@@ -41,6 +41,7 @@ def save_dir(static='static'):
 
 def short_names(models):
     mapping = {
+        'Mean Baseline':      'Baseline',
         'Linear Regression': 'Linear',
         'Random Forest':     'Rnd Forest',
         'Gradient Boosting': 'Grad Boost',
