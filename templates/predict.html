@@ -1,5 +1,5 @@
 {% extends "base.html" %}
-{% block title %}Predictor — HabitML{% endblock %}
+{% block title %}Predictor - HabitML{% endblock %}
 
 {% block extra_head %}
 <style>
@@ -10,7 +10,6 @@
     align-items: start;
   }
 
-  /* ── FORM */
   .form-section-label {
     font-family: 'Space Mono', monospace;
     font-size: 9px;
@@ -124,7 +123,6 @@
   .btn-predict:hover { transform: translateY(-1px); box-shadow: 0 6px 20px rgba(0,229,255,0.3); }
   .btn-predict:disabled { background: var(--surface2); color: var(--muted2); cursor: not-allowed; transform: none; box-shadow: none; }
 
-  /* ── RIGHT PANEL */
   .results-panel {
     position: sticky;
     top: 76px;
@@ -138,7 +136,8 @@
     text-align: center;
   }
   .placeholder-icon {
-    font-size: 48px;
+    font-family: 'Space Mono', monospace;
+    font-size: 38px;
     margin-bottom: 16px;
     opacity: 0.4;
   }
@@ -150,7 +149,6 @@
   }
   .placeholder-text strong { color: var(--text); }
 
-  /* ── MODEL RESULT CARDS */
   .models-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -170,6 +168,13 @@
     border-color: var(--cyan);
     box-shadow: 0 0 20px rgba(0,229,255,0.1);
   }
+  .model-result-card.baseline-card {
+    background: rgba(125,133,144,0.035);
+    border-color: var(--border2);
+  }
+  .model-result-card.baseline-card .cgpa-val {
+    color: var(--muted);
+  }
   .model-result-card .model-label {
     font-family: 'Space Mono', monospace;
     font-size: 9px;
@@ -182,13 +187,21 @@
     justify-content: space-between;
     align-items: center;
   }
-  .model-result-card .best-tag {
-    background: rgba(0,229,255,0.12);
-    color: var(--cyan);
+  .model-result-card .best-tag,
+  .model-result-card .reference-tag {
     font-size: 8px;
     padding: 2px 6px;
     border-radius: 3px;
     border: 1px solid rgba(0,229,255,0.25);
+  }
+  .model-result-card .best-tag {
+    background: rgba(0,229,255,0.12);
+    color: var(--cyan);
+  }
+  .model-result-card .reference-tag {
+    background: rgba(125,133,144,0.12);
+    color: var(--muted);
+    border-color: var(--border2);
   }
   .model-result-card .cgpa-val {
     font-family: 'Space Mono', monospace;
@@ -215,6 +228,11 @@
     letter-spacing: 0.5px;
     color: #000;
   }
+  .model-result-card .tier-pill.reference {
+    color: var(--muted);
+    background: rgba(125,133,144,0.08);
+    border: 1px solid var(--border2);
+  }
   .model-result-card .bar-fill {
     position: absolute;
     bottom: 0; left: 0;
@@ -224,7 +242,6 @@
     width: 0%;
   }
 
-  /* ── CONSENSUS */
   .consensus-card {
     background: var(--surface2);
     border: 1px solid var(--border2);
@@ -265,9 +282,18 @@
     color: var(--muted);
   }
 
-  /* ── LOADING STATE */
   @keyframes pulse { 0%,100%{opacity:1} 50%{opacity:0.4} }
   .loading .cgpa-val { animation: pulse 0.8s ease infinite; }
+
+  @media (max-width: 980px) {
+    .predict-layout { grid-template-columns: 1fr; }
+    .results-panel { position: static; }
+  }
+  @media (max-width: 620px) {
+    .models-grid { grid-template-columns: 1fr; }
+    .consensus-card { align-items: flex-start; flex-direction: column; gap: 12px; }
+    .consensus-cgpa { font-size: 48px; }
+  }
 </style>
 {% endblock %}
 
@@ -276,13 +302,13 @@
 
   <div class="page-header">
     <div class="eyebrow">CGPA Predictor</div>
-    <h1>Habit <span>→</span> Grade Predictor<span class="cursor"></span></h1>
-    <p>Input your habits below. All 5 models will predict your CGPA simultaneously.</p>
+    <h1>Habit <span>-></span> Grade Predictor<span class="cursor"></span></h1>
+    <p>Input your habits below. The baseline and ML models will predict your CGPA side by side.</p>
   </div>
 
   <div class="predict-layout">
 
-    <!-- ── LEFT: FORM -->
+    <!-- LEFT: FORM -->
     <div>
       <div class="card" style="margin-bottom:0;">
 
@@ -356,20 +382,20 @@
         </div>
 
         <button class="btn-predict" id="predict-btn" onclick="runAllModels()">
-          ▶ &nbsp; Run All 5 Models
+          Run Models + Baseline
         </button>
       </div>
     </div>
 
-    <!-- ── RIGHT: RESULTS -->
+    <!-- RIGHT: RESULTS -->
     <div class="results-panel" id="results-panel">
       <div class="placeholder-card" id="placeholder">
-        <div class="placeholder-icon">⬡</div>
+        <div class="placeholder-icon">--</div>
         <div class="placeholder-text">
           <strong>No prediction yet</strong><br/><br/>
           Set your habits on the left<br/>
-          and run all 5 models to see<br/>
-          your predicted CGPA.
+          and run the models plus baseline<br/>
+          to compare predicted CGPA.
         </div>
       </div>
     </div>
@@ -379,14 +405,21 @@
 
 <script>
   const MODEL_NAMES = {{ model_names | tojson }};
+  const BASELINE_NAME = 'Mean Baseline';
+  const ML_MODEL_NAMES = MODEL_NAMES.filter(m => m !== BASELINE_NAME);
 
   const MODEL_SHORT = {
+    'Mean Baseline': 'Baseline',
     'Linear Regression': 'Linear',
     'Random Forest':  'Rnd Forest',
     'SVR':             'SVR',
     'Extra Trees':     'Ext Trees',
     'Gradient Boosting': 'Grad Boost'
   };
+
+  function isBaseline(modelName) {
+    return modelName === BASELINE_NAME;
+  }
 
   function getTier(cgpa) {
     if (cgpa >= 3.7) return { label: 'Outstanding',         color: '#39D353', bg: '#39D353' };
@@ -413,33 +446,34 @@
   async function runAllModels() {
     const btn = document.getElementById('predict-btn');
     btn.disabled = true;
-    btn.textContent = '⏳  Running Models...';
+    btn.textContent = 'Running Benchmarks...';
 
-    // Build skeleton UI immediately
     const panel = document.getElementById('results-panel');
     panel.innerHTML = `
       <div class="models-grid" id="models-grid">
         ${MODEL_NAMES.map(m => `
-          <div class="model-result-card loading" id="card-${m.replace(/\s+/g,'_')}">
-            <div class="model-label">${MODEL_SHORT[m] || m}</div>
-            <div class="cgpa-val">—</div>
+          <div class="model-result-card ${isBaseline(m) ? 'baseline-card' : ''} loading" id="card-${m.replace(/\s+/g,'_')}">
+            <div class="model-label">
+              ${MODEL_SHORT[m] || m}
+              ${isBaseline(m) ? '<span class="reference-tag">reference</span>' : ''}
+            </div>
+            <div class="cgpa-val">--</div>
             <div class="cgpa-scale">calculating...</div>
-            <div class="tier-pill" style="background:var(--border2);color:var(--muted);">...</div>
+            <div class="tier-pill ${isBaseline(m) ? 'reference' : ''}" style="background:var(--border2);color:var(--muted);">...</div>
             <div class="bar-fill" style="background:var(--border2);"></div>
           </div>
         `).join('')}
       </div>
       <div class="consensus-card" id="consensus-card" style="opacity:0.3;">
-        <div class="consensus-cgpa" id="cons-cgpa">—.—</div>
+        <div class="consensus-cgpa" id="cons-cgpa">--</div>
         <div class="consensus-info">
-          <div class="consensus-label">Ensemble Average</div>
+          <div class="consensus-label">ML Model Average</div>
           <div class="consensus-tier" id="cons-tier">Calculating...</div>
-          <div class="consensus-range" id="cons-range">Range: — to —</div>
+          <div class="consensus-range" id="cons-range">Range: -- to --</div>
         </div>
       </div>
     `;
 
-    // Fire all 5 requests in parallel
     const promises = MODEL_NAMES.map(async (modelName) => {
       const resp = await fetch('/api/predict', {
         method: 'POST',
@@ -450,48 +484,55 @@
     });
 
     const results = await Promise.allSettled(promises);
-    const values = [];
+    const mlValues = [];
 
     results.forEach(({ status, value }) => {
       if (status !== 'fulfilled' || value.data.error) return;
       const { modelName, data } = value;
-      values.push(data.cgpa);
+      const baseline = isBaseline(modelName);
+      if (!baseline) mlValues.push(data.cgpa);
 
       const cardId = 'card-' + modelName.replace(/\s+/g,'_');
       const card = document.getElementById(cardId);
       if (!card) return;
 
       const tier = getTier(data.cgpa);
-      const pct = ((data.cgpa - 2.0) / 2.0) * 100;
-      const isBest = MODEL_NAMES.indexOf(modelName) === 0; // will re-evaluate below
+      const pct = Math.max(0, Math.min(100, ((data.cgpa - 2.0) / 2.0) * 100));
 
       card.classList.remove('loading');
       card.innerHTML = `
         <div class="model-label">
           ${MODEL_SHORT[modelName] || modelName}
-          <span class="best-tag" style="display:none;" id="best-${cardId}">★ best</span>
+          ${baseline
+            ? '<span class="reference-tag">reference</span>'
+            : `<span class="best-tag" style="display:none;" id="best-${cardId}">nearest avg</span>`}
         </div>
-        <div class="cgpa-val" style="color:${tier.color};">${data.cgpa.toFixed(2)}</div>
-        <div class="cgpa-scale">out of 4.00</div>
-        <div class="tier-pill" style="background:${tier.bg};">${tier.label}</div>
-        <div class="bar-fill" style="background:${tier.color}; width:${pct}%;"></div>
+        <div class="cgpa-val" style="color:${baseline ? 'var(--muted)' : tier.color};">${data.cgpa.toFixed(2)}</div>
+        <div class="cgpa-scale">${baseline ? 'mean-CGPA reference' : 'out of 4.00'}</div>
+        <div class="tier-pill ${baseline ? 'reference' : ''}" style="${baseline ? '' : `background:${tier.bg};`}">
+          ${baseline ? 'Reference' : tier.label}
+        </div>
+        <div class="bar-fill" style="background:${baseline ? 'var(--muted2)' : tier.color}; width:${pct}%;"></div>
       `;
     });
 
-    // Consensus
-    if (values.length > 0) {
-      const avg = values.reduce((a,b) => a+b, 0) / values.length;
-      const min = Math.min(...values);
-      const max = Math.max(...values);
+    if (mlValues.length > 0) {
+      const avg = mlValues.reduce((a,b) => a+b, 0) / mlValues.length;
+      const min = Math.min(...mlValues);
+      const max = Math.max(...mlValues);
       const avgTier = getTier(avg);
 
-      // Mark best card (closest to avg)
-      let bestModel = null, bestDiff = 999;
+      let bestModel = null;
+      let bestDiff = 999;
       results.forEach(({ status, value }) => {
-        if (status !== 'fulfilled' || value.data.error) return;
+        if (status !== 'fulfilled' || value.data.error || isBaseline(value.modelName)) return;
         const diff = Math.abs(value.data.cgpa - avg);
-        if (diff < bestDiff) { bestDiff = diff; bestModel = value.modelName; }
+        if (diff < bestDiff) {
+          bestDiff = diff;
+          bestModel = value.modelName;
+        }
       });
+
       if (bestModel) {
         const bestCard = document.getElementById('card-' + bestModel.replace(/\s+/g,'_'));
         if (bestCard) {
@@ -504,12 +545,12 @@
       document.getElementById('cons-cgpa').textContent = avg.toFixed(2);
       document.getElementById('cons-cgpa').style.color = avgTier.color;
       document.getElementById('cons-tier').textContent = avgTier.label;
-      document.getElementById('cons-range').textContent = `Range: ${min.toFixed(2)} – ${max.toFixed(2)}`;
+      document.getElementById('cons-range').textContent = `ML range: ${min.toFixed(2)} to ${max.toFixed(2)}`;
       document.getElementById('consensus-card').style.opacity = '1';
     }
 
     btn.disabled = false;
-    btn.innerHTML = '▶ &nbsp; Run All 5 Models';
+    btn.textContent = 'Run Models + Baseline';
   }
 </script>
 {% endblock %}

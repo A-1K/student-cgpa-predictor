@@ -85,7 +85,7 @@ def plot_metrics(results, static='static'):
                     bar.get_height() + abs(max(vals)-min(vals))*0.02,
                     f'{val:.3f}', ha='center', va='bottom', fontsize=8, color=color)
 
-    fig.suptitle('Model Comparison — All 5 Models', fontsize=13, fontweight='bold',
+    fig.suptitle('Model Comparison — Baseline + All 5 Models', fontsize=13, fontweight='bold',
                  color=TEXT, y=1.02)
     path = os.path.join(save_dir(static), 'metrics.png')
     plt.savefig(path, dpi=150, bbox_inches='tight', facecolor=BG)
