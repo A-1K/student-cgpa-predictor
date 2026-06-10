@@ -157,7 +157,7 @@ habits_to_grades/
 
 ```bash
 # 1. Clone
-git clone https://github.com/A-1K/tds-proj-student-cgpa-predictor.git
+git clone https://github.com/A-1K/student-cgpa-predictor.git
 cd habits_to_grades
 
 # 2. Create a virtual environment
